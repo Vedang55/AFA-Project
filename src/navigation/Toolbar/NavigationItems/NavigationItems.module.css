@@ -11,12 +11,12 @@
 }
 
 .Nav a:hover {
-    color: orange;
+    color: #EC741D;
     cursor: pointer;
 }
 
 .Nav a:active{
-    color: orange;
+    color: #EC741D;
 }
 
 @media (max-width: 500px) {

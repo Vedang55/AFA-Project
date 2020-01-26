@@ -13,13 +13,13 @@
 }
 
 .header h3 {
-    color: orange;
+    color: #EC741D;
 }
 
 .Container {
     display: flex;
     flex-direction: column;
     width: 100%;
-    border-left: 1px solid orange;
+    border-left: 1px solid #EC741D;
     padding: 0 0 0 10px;
 }

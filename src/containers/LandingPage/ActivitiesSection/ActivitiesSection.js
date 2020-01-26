@@ -23,7 +23,7 @@ const ActivitySection = (props) => {
                 {eventData.map((item) => {
                     
                     return (
-                        <div className={classes.cardContainer}><ActivityCard img={item.image} title={item.title} maintxt={item.maintxt} /></div>
+                        <div key={Math.random()} className={classes.cardContainer}><ActivityCard img={item.image} title={item.title} maintxt={item.maintxt} /></div>
                     );
                 })}
 
