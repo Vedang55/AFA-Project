@@ -1,0 +1,13 @@
+.eventCardContainer {
+    margin: 0 10vw;
+}
+
+.eventCardContainer > div {
+    margin-bottom: 8vh;
+}
+
+@media (max-width: 500px) {
+    .eventCardContainer {
+        margin: 0;
+    }
+}

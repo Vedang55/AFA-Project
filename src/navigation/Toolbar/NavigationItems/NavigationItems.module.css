@@ -1,0 +1,26 @@
+.Nav {
+    display: flex;
+    justify-content: flex-end;
+    box-sizing: border-box;
+}
+
+.Nav a {
+    padding: 2vh 1.5vw;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.Nav a:hover {
+    color: orange;
+    cursor: pointer;
+}
+
+.Nav a:active{
+    color: orange;
+}
+
+@media (max-width: 500px) {
+    .Nav a {
+        font-size: 1.5em;
+    }
+}

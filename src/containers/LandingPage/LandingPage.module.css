@@ -1,0 +1,126 @@
+.seccontainer {
+    padding: 100px 6vw;
+    background-color: black;
+    min-height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+    justify-content: center;
+}
+
+
+
+
+/* sectoin 1 */
+
+.Sec1 h1 {
+    font-size: 4em;
+}
+
+.Sec1 h2 {
+
+    font-size: 2.5em;
+}
+
+.Sec1 button {
+    background-color: orange;
+    border-radius: 15px;
+    border: none;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+}
+
+
+/* sectoin 2 */
+.Sec2{
+    padding: 100px 20vw;
+}
+
+.Sec2 h2 {
+    border-bottom: 1px white solid;
+    padding: 15px;
+}
+
+/* sectoin 3 */
+.Sec3 h1 {
+    border-bottom: 1px solid white;
+    padding: 10px;
+    margin-top: 0;
+    padding-top: 0;   
+}
+
+.Sec3 {
+    justify-content: flex-start;
+    padding: 80px 10vw;
+    /* max-height: 100vh; */
+}
+
+/* section 4 */
+.Sec4 > h1 {
+    margin-top: 0;
+    border-bottom: 1px solid white;
+    padding: 10px;
+    padding-top: 0;   
+}
+
+.Sec4 {
+    justify-content: flex-start;
+}
+
+
+/* section 5 */
+.Sec5 > h1 {
+    margin-top: 0;
+    border-bottom: 1px solid white;
+    padding: 10px;
+    padding-top: 0;   
+}
+
+.Sec5 {
+    justify-content: flex-start;
+}
+
+@media (max-width: 850px){
+    .Sec3 {
+        padding: 10vh 4vh 1vh 4vh;
+        font-size: 1em;
+        max-height: none;
+    }
+}
+ 
+
+
+@media (max-width: 500px) {
+    /* section 1 */
+    .Sec1 {
+        padding: 10vh 6vw;
+        box-sizing: border-box;
+    }
+    .Sec1 h1 {
+        font-size: 10vw;
+    }
+
+    .Sec1 h2 {
+        font-size: 4vh;
+    }
+
+    /* section 2 */
+    .Sec2{
+        padding: 10vh 4vw 2vh 4vw;
+    }
+
+    .Sec2 p {
+        font-size: 2.5vh;
+    }
+    .Sec5 {
+        padding-top: 10vh;
+        padding-bottom: 2vh;
+    }
+
+    .Sec5 > h1 {
+        font-size: 4vh;
+    }
+    
+}

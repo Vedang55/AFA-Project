@@ -1,0 +1,56 @@
+
+.Cont {
+    box-sizing: border-box;
+    height: 140px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 6px 6vw;
+    transition: all 0.3s ease-out;
+}
+
+.Small {
+    height: 90px;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+
+@media (max-width: 500px) {
+    .NavItems {
+        display: none;
+    }
+    .Cont {
+        height: 10vh;
+    }
+}
+
+
+
+.MenuToggle {
+    width: 40px;
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.MenuToggle div {
+    width: 90%;
+    height: 3px;
+    background-color: white;
+}
+
+@media (min-width: 500px) {
+    .MenuToggle {
+        display: none;
+    }
+}

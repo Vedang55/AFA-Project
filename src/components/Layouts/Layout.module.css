@@ -1,0 +1,11 @@
+.Content{
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+
+@media (max-width: 500px) {
+    /* .Content {
+        padding: 10vh 0;
+    } */
+}

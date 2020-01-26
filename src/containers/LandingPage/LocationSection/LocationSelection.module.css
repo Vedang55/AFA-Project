@@ -1,0 +1,52 @@
+.Container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start; 
+    flex-grow: 1;
+    width: 100%;
+}
+
+
+.carCont {
+    flex-grow: 1;
+    max-width: 100%;
+}
+
+
+
+.LocationButtonContainer {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    flex-shrink: 2;
+    flex-grow: 1;
+    flex-basis: 400px;
+}
+
+.locationCardCont{
+    flex-basis: 500px;
+    flex-shrink: 1;
+    flex-grow: 1;
+    align-self: stretch;
+}
+
+@media (min-width:850px) {
+    .carCont {
+        display: none;
+    }
+}
+
+@media (max-width:849px){
+    .locationCardCont {
+        display: none;
+    }
+    .LocationButtonContainer {
+        display: none;
+    }
+}
+
+

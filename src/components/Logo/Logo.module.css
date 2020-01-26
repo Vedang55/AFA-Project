@@ -1,0 +1,11 @@
+.Logo {
+    height: 100%;
+    cursor: pointer;
+}
+
+.Logo img {
+    height: 100%;
+    width: auto;
+    display: block;
+}
+

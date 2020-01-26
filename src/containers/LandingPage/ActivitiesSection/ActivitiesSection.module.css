@@ -1,0 +1,14 @@
+.Container {
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.cardContainer{
+    width: 400px;
+}
+
+@media (max-width: 500px){
+    .cardContainer{
+        width: 100%;
+    }
+}
