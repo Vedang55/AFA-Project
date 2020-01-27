@@ -17,13 +17,14 @@ const ActivitySection = (props) => {
         navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev'
-          }
+          },
+
     }
 
 
     return (
         <div className={classes.Container}>
-            <Swiper {...params} shouldSwiperUpdate='true'>
+            <Swiper {...params}>
                 {eventData.map((item) => {
 
                     return (
