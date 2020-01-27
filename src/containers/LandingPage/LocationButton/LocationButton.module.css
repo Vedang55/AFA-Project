@@ -1,6 +1,6 @@
 .Container {
-    border: 6px solid rgba(255, 255, 255, 0.3);
-    border-radius: 10px;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
     padding: 10px;
     margin: 10px 10px;
     width: 100px;
@@ -14,25 +14,41 @@
     transition: all 0.3s ease-out;
 }
 
-.Selected {
-    animation: myanim 3s infinite;
+.Container.Selected {
+    animation: myanim 0.6s forwards;
 }
 
+
+/* button border animation */
 @keyframes myanim {
     100% {
-        border: 6px solid rgba(255, 255, 255, 1);
+        border: 3px solid rgba(255, 255, 255, 1);
     }
+
     0% {
-        border: 6px solid rgba(255, 255, 255, 0.4);
+        border: 3px solid rgba(255, 255, 255, 0.4);
     }
  }
 
-.Selected hr {
-    display: block;
-    border: 2px solid #EC741D;
-    width: 50%;
+
+/* orange hr animation */
+ @keyframes hranim {
+    100% {
+        border: 2px solid #EC741D;
+    }
+
+
+    0% {
+        border: 2px solid rgb(0, 0, 0);
+    }
+ }
+
+.Container hr {
+    width: 40%;
+    border: 0px solid rgb(0, 0, 0);
+    
 }
 
-.NotSelected hr {
-    display: none;
+hr.Selected {
+    animation: hranim 0.3s forwards;
 }

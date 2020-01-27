@@ -84,7 +84,7 @@
 
 @media (max-width: 850px){
     .Sec3 {
-        padding: 10vh 4vh 1vh 4vh;
+        padding: 10vh 9vh 1vh 9vh;
         font-size: 1em;
         max-height: none;
     }
@@ -121,6 +121,11 @@
 
     .Sec5 > h1 {
         font-size: 4vh;
+    }
+    .Sec3 {
+        padding: 10vh 4vh 1vh 4vh;
+        font-size: 1em;
+        max-height: none;
     }
     
 }
