@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import classes from './ActivitiesSection.module.css';
 import Swiper from 'react-id-swiper';
 import ActivityCard from '../ActivityCard/ActivityCard';
@@ -6,22 +6,26 @@ import eventData from '../../../data/Events.json'
 
 const ActivitySection = (props) => {
 
-
     const params = {
         slidesPerView: 'auto',
         spaceBetween: 30,
         pagination: {
             el: '.swiper-pagination',
             clickable: true,
-            type: 'fraction',
-        }
+            // type: 'fraction'
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev'
+          }
     }
+
 
     return (
         <div className={classes.Container}>
-            <Swiper {...params}>
+            <Swiper {...params} shouldSwiperUpdate='true'>
                 {eventData.map((item) => {
-                    
+
                     return (
                         <div key={Math.random()} className={classes.cardContainer}><ActivityCard img={item.image} title={item.title} maintxt={item.maintxt} /></div>
                     );

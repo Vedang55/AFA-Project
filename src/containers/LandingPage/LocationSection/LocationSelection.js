@@ -5,6 +5,7 @@ import locationData from '../../../data/locations';
 import LocationButton from '../LocationButton/LocationButton';
 import 'swiper/css/swiper.css'
 import Swiper from 'react-id-swiper';
+import './swipercss.css';
 
 
 
@@ -20,13 +21,14 @@ const LocationSelection = () => {
         pagination: {
             el: '.swiper-pagination',
             type: 'bullets',
-            clickable: true
+            clickable: true,
         },
         navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev'
         },
-        spaceBetween: 30
+        spaceBetween: 30,
+        effect: 'flip',
     }
 
 

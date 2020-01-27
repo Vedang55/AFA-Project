@@ -12,6 +12,7 @@
     background-color: rgba(0, 0, 0, 0.5);
     padding: 6px 6vw;
     transition: all 0.3s ease-out;
+    z-index: 100;
 }
 
 .Small {

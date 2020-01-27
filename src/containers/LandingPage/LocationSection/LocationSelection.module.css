@@ -16,6 +16,8 @@
 
 
 
+
+
 .LocationButtonContainer {
     margin-left: 20px;
     display: flex;
@@ -27,6 +29,7 @@
     flex-grow: 1;
     flex-basis: 0px;
 }
+
 
 .locationCardCont{
     flex-basis: 0px;

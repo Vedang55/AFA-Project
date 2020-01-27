@@ -6,6 +6,7 @@
     padding: 20px;
     border-radius: 15px;
     box-sizing: border-box;
+    justify-content: space-evenly;
 }
 
 .Container span {
@@ -17,8 +18,30 @@
     border: 2px solid #EC741D;
 }
 
+.directionButton{
+    color: #EC741D;
+}
+
 @media (max-width : 500px){
     .Container {
-        min-height: 70vh;
+        min-height: 75vh;
+        padding: 1.8vh 1vw;
+        padding-bottom: 6vh;
     }
+
+    .Container p{
+        font-size: 2.3vh;
+        text-align: center;
+        margin: 0;
+    }
+
+    .Container span {
+        font-size: 2.3vh;
+        margin: 0.5vh;
+    }
+    .Container h2 {
+        font-size: 5vw;
+        margin: 0;
+    }
+
 }

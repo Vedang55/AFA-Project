@@ -10,7 +10,7 @@ const LocationCard = (props) => {
             <p>{props.data.details}</p>
             <span>Co-ordinator: {props.data.coordinator}</span>
             <span>Contact: {props.data.Contact}</span>
-            <span>Directions</span>
+            <span className={classes.directionButton}>Get directions to observatory</span>
         </div>
     );
 }

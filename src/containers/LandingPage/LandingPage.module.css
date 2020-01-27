@@ -98,6 +98,11 @@
         padding: 10vh 6vw;
         box-sizing: border-box;
     }
+
+    .seccontainer > h1 {
+        font-size: 3vh;
+    }
+
     .Sec1 h1 {
         font-size: 10vw;
     }
@@ -119,11 +124,8 @@
         padding-bottom: 2vh;
     }
 
-    .Sec5 > h1 {
-        font-size: 4vh;
-    }
     .Sec3 {
-        padding: 10vh 4vh 1vh 4vh;
+        padding: 10vh 2vh 1vh 2vh;
         font-size: 1em;
         max-height: none;
     }
