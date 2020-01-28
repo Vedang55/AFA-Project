@@ -38,9 +38,9 @@
     padding: 100px 20vw;
 }
 
-.Sec2 h2 {
+.Sec2 h1 {
     border-bottom: 1px white solid;
-    padding: 15px;
+    padding: 10px;
 }
 
 /* sectoin 3 */
@@ -100,11 +100,16 @@
     }
 
     .seccontainer > h1 {
-        font-size: 3vh;
+        font-size: 5.5vw;
+        position: sticky;
+        top: 5vh;
+        z-index: 300;
+        padding: 0 2vw;
     }
 
     .Sec1 h1 {
         font-size: 10vw;
+        position: static;
     }
 
     .Sec1 h2 {
@@ -119,15 +124,19 @@
     .Sec2 p {
         font-size: 2.5vh;
     }
-    .Sec5 {
-        padding-top: 10vh;
-        padding-bottom: 2vh;
-    }
+
 
     .Sec3 {
         padding: 10vh 2vh 1vh 2vh;
         font-size: 1em;
         max-height: none;
+    }
+
+
+
+    .Sec5 {
+        padding-top: 10vh;
+        padding-bottom: 2vh;
     }
     
 }

@@ -24,8 +24,8 @@ const LocationSelection = () => {
             clickable: true,
         },
         navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev'
+            // nextEl: '.swiper-button-next',
+            // prevEl: '.swiper-button-prev'
         },
         spaceBetween: 30,
         effect: 'flip',

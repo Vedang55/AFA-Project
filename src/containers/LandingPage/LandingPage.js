@@ -20,7 +20,7 @@ const LandingPage = () => {
                 </div>
 
                 <div className={[classes.Sec2, classes.seccontainer].join(' ')}>
-                    <h2>About the organisation</h2>
+                    <h1>About the organisation</h1>
                     <p>
                         The Association of Friends of Astronomy (Goa) was set up in December 1982 by a group of enthusiastic Astronomy
                         buffs. The Association opens its arms to all individuals who are mesmerized by the awesome universe and are
