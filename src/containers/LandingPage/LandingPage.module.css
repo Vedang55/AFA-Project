@@ -110,6 +110,7 @@
     .Sec1 h1 {
         font-size: 10vw;
         position: static;
+        z-index: 0;
     }
 
     .Sec1 h2 {
