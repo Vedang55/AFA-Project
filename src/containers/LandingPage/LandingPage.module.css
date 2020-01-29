@@ -82,6 +82,12 @@
     justify-content: flex-start;
 }
 
+.downIcon {
+    width: 6vh;
+    position: absolute;
+    bottom: 0;
+}
+
 @media (max-width: 850px){
     .Sec3 {
         padding: 10vh 9vh 1vh 9vh;

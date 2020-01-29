@@ -3,7 +3,8 @@ import Layout from '../../components/Layouts/Layout';
 import classes from './LandingPage.module.css';
 import LocationSelection from './LocationSection/LocationSelection';
 import EventSection from './EventsSection/EventsSection';
-import ActivitiesSection from './ActivitiesSection/ActivitiesSection'
+import ActivitiesSection from './ActivitiesSection/ActivitiesSection';
+import { FiChevronDown } from "react-icons/fi";
 
 
 
@@ -16,6 +17,9 @@ const LandingPage = () => {
                     <h2 align='center'>Friends of Astronomy - Goa</h2>
                     <p align='center'>Want to schedule a program at your organisation?</p>
                     <button>Book a Program</button>
+                    <div className={classes.downIcon}>
+                        <FiChevronDown size={'100%'} />
+                    </div>
 
                 </div>
 
@@ -48,7 +52,7 @@ const LandingPage = () => {
                 </div>
 
                 <div className={[classes.Sec5, classes.seccontainer].join(' ')}>
-                    <h1>Our Activities</h1>  
+                    <h1>Our Activities</h1>
                     <ActivitiesSection />
                 </div>
 
