@@ -13,11 +13,17 @@
 }
 
 .GalleryContainer{
-    margin-bottom: 30px;
+    margin-bottom: 120px;
+    align-self: stretch;
+    padding: 0 40px;
 }
 
-@media (max-width: 800px){
 
+
+@media (max-width: 1000px){
+    .GalleryContainer{
+        padding: 0 0px;
+    }
 }
 
 @media (max-width: 500px){
@@ -26,7 +32,12 @@
     }
 
     .Container h1 {
-        font-size: 6vw;
-        padding: 0.8vh 6vw;
+        font-size: 5vw;
+        padding: 0.6vh 6vw;
+        position: sticky;
+        top: 5vh;
+        z-index: 300;
+        background-color: rgba(255, 255, 255, 1);
+        border-radius: 10px;
     }
 }

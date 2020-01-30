@@ -1,7 +1,41 @@
 @import "~react-image-gallery/styles/css/image-gallery.css";
 
-.image-gallery-image {
-    max-height: 70vh !important;
+
+.image-gallery-thumbnails-wrapper.bottom {
+    transform: translate(0px, 50px) !important;
+}
+
+.image-gallery-thumbnails-wrapper.bottom::before {
+    content: "Astrophotography";
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -25px);
+    display: inline;
+    position: absolute;
+    font-size: 25px;
 }
 
 
+@media (min-width:1000px){
+    .image-gallery-image {
+        max-height: 60vh !important;
+        min-height: 60vh;
+        width: auto !important;
+        max-width: 100%;
+        border: 15px solid gray;
+        box-sizing: border-box;
+    }
+}
+
+
+
+
+#root > div > main > div > div:nth-child(3) > div > div > div.image-gallery-thumbnails-wrapper.bottom::before  {
+    content: "Events";   
+}
+
+@media (max-width: 500px){
+    .image-gallery-thumbnails-wrapper.bottom::before{
+        font-size: 4.5vw;
+    }
+}
