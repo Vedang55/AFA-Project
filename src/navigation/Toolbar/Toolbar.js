@@ -1,27 +1,38 @@
 import React, { useEffect, useState } from 'react';
 import classes from './Toolbar.module.css';
 import Logo from '../../components/Logo/Logo'
-import NavigationItems from '../../navigation/Toolbar/NavigationItems/NavigationItems'
+import NavigationItems from '../../navigation/Toolbar/NavigationItems/NavigationItems';
+import { NavLink } from 'react-router-dom';
 
 const Toolbar = (props) => {
 
 
     const [containerClasses, setContainerClasses] = useState([classes.Cont, classes.Big]);
     useEffect(() => {
-        window.addEventListener('scroll', getWindowHeight);
+        if (props.stickyNavbar ==="true") {
+            window.addEventListener('scroll', getWindowHeight);
+        }
+        else {
+            const cc = [...containerClasses];
+            cc[1] = classes.Small;
+            setContainerClasses(cc);
+        }
+        return(() => {
+            window.removeEventListener('scroll', getWindowHeight);
+        });
     }, []);
 
     const getWindowHeight = () => {
 
         const distanceY = window.pageYOffset || document.documentElement.scrollTop
         const shrinkOn = 150;
-
+        
         if (distanceY > shrinkOn) {
             const cc = [...containerClasses];
             cc[1] = classes.Small;
             setContainerClasses(cc);
         }
-        else{
+        else {
             const cc = [...containerClasses];
             cc[1] = classes.Big;
             setContainerClasses(cc);
@@ -31,7 +42,10 @@ const Toolbar = (props) => {
 
     return (
         <header className={containerClasses.join(' ')}>
-            <Logo />
+
+            <NavLink to="/">
+                <Logo />
+            </NavLink>
             <div className={classes.NavItems}>
                 <NavigationItems />
             </div>

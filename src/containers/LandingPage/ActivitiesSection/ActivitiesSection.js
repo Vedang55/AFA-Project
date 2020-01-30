@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import classes from './ActivitiesSection.module.css';
 import Swiper from 'react-id-swiper';
 import ActivityCard from '../ActivityCard/ActivityCard';

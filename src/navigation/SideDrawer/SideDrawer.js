@@ -1,5 +1,4 @@
 import React from 'react';
-import Logo from '../../components/Logo/Logo';
 import NavigationItems from '../Toolbar/NavigationItems/NavigationItems';
 import classes from './SideDrawer.module.css';
 import Auxi from '../../hoc/auxi';

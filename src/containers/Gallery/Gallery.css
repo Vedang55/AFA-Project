@@ -1,0 +1,7 @@
+@import "~react-image-gallery/styles/css/image-gallery.css";
+
+.image-gallery-image {
+    max-height: 70vh !important;
+}
+
+

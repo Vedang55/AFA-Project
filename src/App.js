@@ -1,11 +1,13 @@
 import React from 'react';
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter, Route, Router } from 'react-router-dom';
 import LandingPage from './containers/LandingPage/LandingPage';
+import Gallery from './containers/Gallery/Gallery';
 
 function App() {
   return (
     <BrowserRouter>
-      <LandingPage />
+      <Route path="/" exact component={LandingPage}/>
+      <Route path="/gallery" component={Gallery}/>
     </BrowserRouter>
   );
 }

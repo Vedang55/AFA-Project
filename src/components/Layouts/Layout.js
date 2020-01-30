@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import Aux from '../../hoc/auxi';
 import classes from './Layout.module.css';
 import Toolbar from '../../navigation/Toolbar/Toolbar';
 import SideDrawer from '../../navigation/SideDrawer/SideDrawer';
@@ -22,7 +21,7 @@ const Layout = (props) => {
     return (
         <div className={classes.Cont}>
             <div>
-                <Toolbar click={toggleSideDrawer}/>
+                <Toolbar click={toggleSideDrawer} stickyNavbar={props.stickyNavbar} />
                 <SideDrawer closed={sideDrawerClosedHandler} open={showSideDrawer}/>
             </div>
             <main className={classes.Content}>

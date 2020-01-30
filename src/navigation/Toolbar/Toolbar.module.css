@@ -9,10 +9,14 @@
     top: 0;
     left: 0;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.9);
     padding: 6px 6vw;
     transition: all 0.3s ease-out;
     z-index: 100;
+}
+
+.Cont a{
+    height: 100%;
 }
 
 .Small {
@@ -21,15 +25,21 @@
 }
 
 
-@media (max-width: 500px) {
+@media (max-width: 820px) {
     .NavItems {
         display: none;
     }
     .Cont {
         height: 10vh;
+        min-height: 50px;
     }
 }
 
+.MenuToggle div {
+    width: 90%;
+    height: 3px;
+    background-color: white;
+}
 
 
 .MenuToggle {
@@ -44,14 +54,17 @@
     cursor: pointer;
 }
 
-.MenuToggle div {
-    width: 90%;
-    height: 3px;
-    background-color: white;
-}
 
-@media (min-width: 500px) {
+@media (min-width: 821px) {
     .MenuToggle {
         display: none;
     }
 }
+
+
+
+
+
+
+
+

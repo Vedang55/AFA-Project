@@ -1,0 +1,32 @@
+.Container {
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+}
+
+.Container h1 {
+    border-bottom:1.5px solid black;
+    padding: 5px 40px;
+    margin: 10px 0
+}
+
+.GalleryContainer{
+    margin-bottom: 30px;
+}
+
+@media (max-width: 800px){
+
+}
+
+@media (max-width: 500px){
+    .Container{
+        padding-top: 10vh;
+    }
+
+    .Container h1 {
+        font-size: 6vw;
+        padding: 0.8vh 6vw;
+    }
+}

@@ -10,7 +10,7 @@ import { FiChevronDown } from "react-icons/fi";
 
 const LandingPage = () => {
     return (
-        <Layout>
+        <Layout stickyNavbar="true">
             <div className={classes.Container}>
                 <div className={[classes.Sec1, classes.seccontainer].join(' ')}>
                     <h1 align='center'>The Universe is our playground</h1>
