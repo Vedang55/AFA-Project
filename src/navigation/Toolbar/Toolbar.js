@@ -43,9 +43,9 @@ const Toolbar = (props) => {
     return (
         <header className={containerClasses.join(' ')}>
 
-            <NavLink to="/">
+            <a href="/">
                 <Logo />
-            </NavLink>
+            </a>
             <div className={classes.NavItems}>
                 <NavigationItems />
             </div>
