@@ -1,0 +1,17 @@
+.Container {
+    border-left: 2px solid #EC741D;
+    align-self: stretch;
+    padding-left: 1.5vw;
+    margin: 4vh 0;
+}
+
+.Container > h2 {
+    padding : 0;
+    margin: 0;
+}
+
+@media (max-width : 500px) {
+    .Container {
+        padding-left: 3vw;
+    }
+}

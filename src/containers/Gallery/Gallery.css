@@ -16,10 +16,12 @@
 }
 
 
+
+
 @media (min-width:1000px){
     .image-gallery-image {
-        max-height: 60vh !important;
-        min-height: 60vh;
+        height: 60vh;
+        
         width: auto !important;
         max-width: 100%;
         border: 15px solid gray;
@@ -38,4 +40,9 @@
     .image-gallery-thumbnails-wrapper.bottom::before{
         font-size: 4.5vw;
     }
+
+    .image-gallery-image{
+        min-height: 30vh !important;
+    }
 }
+

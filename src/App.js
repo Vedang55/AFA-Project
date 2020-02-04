@@ -5,6 +5,7 @@ import Gallery from './containers/Gallery/Gallery';
 import Equipment from './containers/Equipment/Equipment';
 import AboutUs from './containers/AboutUs/AboutUs';
 import Clubs from './containers/Clubs/Clubs';
+import Publications from './containers/Publications/Publications'
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Route path="/equipment" component={Equipment}/>
       <Route path="/aboutus" component={AboutUs}/>
       <Route path="/clubs" component={Clubs}/>
+      <Route path="/publications" component={Publications}/>
 
     </BrowserRouter>
   );
