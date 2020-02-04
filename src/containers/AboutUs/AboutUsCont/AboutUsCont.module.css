@@ -7,7 +7,7 @@
 .tabCont {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 .tabCont > h2 {

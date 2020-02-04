@@ -4,6 +4,7 @@ import classes from './LandingPage.module.css';
 import LocationSelection from './LocationSection/LocationSelection';
 import EventSection from './EventsSection/EventsSection';
 import ActivitiesSection from './ActivitiesSection/ActivitiesSection';
+import TestimonialsSection from './TestimonialsSection/TestimonialsSection';
 import { FiChevronDown } from "react-icons/fi";
 
 
@@ -54,6 +55,11 @@ const LandingPage = () => {
                 <div className={[classes.Sec5, classes.seccontainer].join(' ')}>
                     <h1>Our Activities</h1>
                     <ActivitiesSection />
+                </div>
+
+                <div className={[classes.Sec6, classes.seccontainer].join(' ')}>
+                    <h1>Testimonials</h1>
+                    <TestimonialsSection />
                 </div>
 
 

@@ -82,8 +82,22 @@
 
 .Sec5 {
     justify-content: flex-start;
-    
+    min-height: 0;
 }
+
+/* section 6 */
+.Sec6 > h1 {
+    margin-top: 0;
+    border-bottom: 1px solid white;
+    padding: 10px;
+    padding-top: 0;   
+}
+
+.Sec6{
+    justify-content: flex-start;
+    min-height: 0;
+}
+
 
 .downIcon {
     width: 6vh;
@@ -151,6 +165,10 @@
     .Sec5 {
         padding-top: 10vh;
         padding-bottom: 2vh;
+    }
+
+    .Sec6{
+        padding: 10vh 0vw 8vh 0vw;
     }
     
 }
