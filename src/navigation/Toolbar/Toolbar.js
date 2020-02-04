@@ -7,17 +7,19 @@ import { NavLink } from 'react-router-dom';
 const Toolbar = (props) => {
 
 
-    const [containerClasses, setContainerClasses] = useState([classes.Cont, classes.Big]);
+    const [containerClasses, setContainerClasses] = useState([classes.Cont, classes.Small]);
     useEffect(() => {
-        if (props.stickyNavbar ==="true") {
+        const cc = [...containerClasses];
+        if (props.stickyNavbar === "true") {
             window.addEventListener('scroll', getWindowHeight);
+            cc[1] = classes.Big;
+            setContainerClasses(cc);
         }
         else {
-            const cc = [...containerClasses];
             cc[1] = classes.Small;
             setContainerClasses(cc);
         }
-        return(() => {
+        return (() => {
             window.removeEventListener('scroll', getWindowHeight);
         });
     }, []);
@@ -26,7 +28,7 @@ const Toolbar = (props) => {
 
         const distanceY = window.pageYOffset || document.documentElement.scrollTop
         const shrinkOn = 150;
-        
+
         if (distanceY > shrinkOn) {
             const cc = [...containerClasses];
             cc[1] = classes.Small;

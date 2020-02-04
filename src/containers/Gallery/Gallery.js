@@ -36,7 +36,7 @@ class MyGallery extends React.Component {
                     </div>
 
                     <div className={classes.GalleryContainer}>
-                        <ImageGallery items={images} />
+                        <ImageGallery items={images} lazyLoad={true} useBrowserFullscreen={false}/>
                     </div>
                 </div>
             </Layout>

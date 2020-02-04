@@ -1,7 +1,7 @@
 
 .Cont {
     box-sizing: border-box;
-    height: 140px;
+    
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -9,7 +9,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.9);
+   
     padding: 6px 6vw;
     transition: all 0.3s ease-out;
     z-index: 100;
@@ -21,6 +21,11 @@
 
 .Small {
     height: 90px;
+    background-color: rgba(0, 0, 0, 1);
+}
+
+.Big {
+    height: 140px;
     background-color: rgba(0, 0, 0, 0.9);
 }
 

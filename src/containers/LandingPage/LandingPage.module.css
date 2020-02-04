@@ -35,7 +35,8 @@
 
 /* sectoin 2 */
 .Sec2{
-    padding: 100px 20vw;
+    padding: 60px 20vw;
+    min-height: 0;
 }
 
 .Sec2 h1 {
@@ -67,6 +68,7 @@
 
 .Sec4 {
     justify-content: flex-start;
+    min-height: 0;
 }
 
 
@@ -80,6 +82,7 @@
 
 .Sec5 {
     justify-content: flex-start;
+    
 }
 
 .downIcon {
@@ -99,6 +102,10 @@
 
 
 @media (max-width: 500px) {
+
+    .seccontainer {
+        padding-bottom: 0;
+    }
     /* section 1 */
     .Sec1 {
         padding: 10vh 6vw;
@@ -134,7 +141,7 @@
 
 
     .Sec3 {
-        padding: 10vh 2vh 1vh 2vh;
+        padding: 10vh 2vh 0vh 2vh;
         font-size: 1em;
         max-height: none;
     }
