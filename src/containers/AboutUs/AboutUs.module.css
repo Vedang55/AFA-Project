@@ -1,32 +1,23 @@
 .Container {
-    padding-top: 100px;
+    padding: 100px 10vw 20px 10vw;
     display: flex;
     flex-direction: column;
     align-items: center;
     color: black;
 }
 
-.Container h1 {
+.Container > h1 {
     border-bottom:1.5px solid black;
     padding: 5px 40px;
-    margin: 10px 0
-}
-
-.GalleryContainer{
-    margin-bottom: 120px;
-    align-self: stretch;
-    padding: 0 40px;
+    margin: 10px 0 5vh 0;
 }
 
 
 
 
 @media (max-width: 500px){
-    .Container{
-        padding-top: 10vh;
-    }
 
-    .Container h1 {
+    .Container > h1 {
         font-size: 5vw;
         padding: 0.6vh 6vw;
         position: sticky;
@@ -34,5 +25,11 @@
         z-index: 150;
         background-color: rgba(255, 255, 255, 1);
         border-radius: 10px;
+    }
+}
+
+@media (max-width: 800px){
+    .Container{
+        padding: 10vh 3vw 20px 3vw;
     }
 }

@@ -1,0 +1,35 @@
+.Container {
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+}
+
+.tabCont {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.tabCont > h2 {
+    cursor: pointer;
+    padding : 5px 0;
+    color: gray;
+}
+
+.tabCont > h2:hover{
+    color: black;
+}
+
+.active {
+    border-bottom: 5px solid #EC741D;
+}
+
+@media (max-width: 800px){
+    .tabCont {
+        justify-content: space-between;
+    }
+
+    .tabCont > h2 { 
+        font-size: 3.6vw;
+    }
+}
