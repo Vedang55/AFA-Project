@@ -1,0 +1,37 @@
+.Container {
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+    padding-left: 8vw;
+    padding-right: 8vw;
+    box-sizing: border-box;
+    
+}
+
+.Container > h1 {
+    border-bottom:1.5px solid black;
+    padding: 5px 40px;
+    margin: 10px 0
+}
+
+
+
+@media (max-width: 500px){
+    .Container{
+        padding-top: 10vh;
+        padding-left: 4.5vw;
+        padding-right: 4.5vw;
+    }
+
+    .Container > h1 {
+        font-size: 5vw;
+        padding: 0.6vh 6vw;
+        position: sticky;
+        top: 5vh;
+        z-index: 150;
+        background-color: rgba(255, 255, 255, 1);
+        border-radius: 10px;
+    }
+}

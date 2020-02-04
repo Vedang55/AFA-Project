@@ -1,0 +1,46 @@
+.Container {
+    display:  flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 100vw;
+    box-sizing: border-box;
+    height: 250px;
+    margin: 20px 0;
+}
+
+.imageCont {
+    height: 100%;
+    width: 30%;
+}
+
+.imageCont > img {
+    height: 100%;
+    object-fit: contain;
+    width: 100%;
+}
+
+.textCont{
+    width: 70%;
+}
+
+
+
+@media (max-width : 800px){
+    .Container {
+        flex-direction: column;
+        height: auto;
+        align-items: stretch; 
+    }
+
+    .textCont{
+        width: 100%;
+    }
+    .imageCont {
+        height: 25vh;
+        width: 100%;
+    }
+    .textCont > h1 {
+        font-size: 5.3vw;
+        font-weight: 500;
+    }
+}
