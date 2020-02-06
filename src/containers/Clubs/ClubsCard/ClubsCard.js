@@ -1,6 +1,6 @@
 import React from 'react';
 import classes from './ClubsCard.module.css';
-import data from '../../../data/clubs'
+import data from '../../../data/clubs';
 
 
 const ClubsCard = (props) => {

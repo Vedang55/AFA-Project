@@ -2,7 +2,9 @@ import React from 'react';
 import classes from './ActivitiesSection.module.css';
 import Swiper from 'react-id-swiper';
 import ActivityCard from '../ActivityCard/ActivityCard';
-import eventData from '../../../data/Events.json'
+import eventData from '../../../data/Activities.json'
+import './activity.css'
+import { FaBeer } from 'react-icons/fa';
 
 const ActivitySection = (props) => {
 

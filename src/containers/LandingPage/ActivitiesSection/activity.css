@@ -1,0 +1,5 @@
+@media (max-width : 787px) {
+    .swiper-button-prev, .swiper-button-next {
+        display: none !important;
+    }
+}
