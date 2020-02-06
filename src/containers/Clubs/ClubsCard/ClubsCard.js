@@ -1,21 +1,30 @@
 import React from 'react';
 import classes from './ClubsCard.module.css';
+import data from '../../../data/clubs'
 
 
-const ClubsCard = () => {
+const ClubsCard = (props) => {
 
 
     return (
         <div className={classes.Container}>
             <div className={classes.imageCont}>
-                <img src={require('../../../assets/images/AFA-logo.png')} alt="club"/>
+                <img src={require(`../../../assets/images/clubs/${data[props.index].image}`)} alt="club" />
             </div>
 
             <div className={classes.textCont}>
-                <h1>Via Lectia</h1>
+                <h1>{data[props.index].name}</h1>
                 <p>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                    {data[props.index].description}
                 </p>
+                {
+                    data[props.index].activities.length > 0 ? (<ul>
+                        {data[props.index].activities.map((item, index) => {
+                            return <li style={{marginBottom:'4px'}}><span style={{ fontWeight: "bold" }}>{item.name}: </span>
+                                {item.description}</li>
+                        })}
+                    </ul>) : undefined
+                }
             </div>
 
 

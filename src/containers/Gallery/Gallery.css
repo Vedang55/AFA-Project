@@ -42,7 +42,7 @@
     }
 
     .image-gallery-image{
-        min-height: 30vh !important;
+        height: 40vh !important;
     }
 }
 
