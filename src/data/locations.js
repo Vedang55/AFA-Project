@@ -56,6 +56,24 @@ const locationData = {
             Contact: '7798882213',
             details: "Set up in 2012, the rural astronomy centre is located at Vivekanand Vidyalaya, Borim."
         }
+        ,
+        {
+            place: 'Canacona',
+            timings: '*Contact for timings',
+            days:"",
+            coordinator: 'Manoj Gaonkar',
+            Contact: '9765676007',
+            details: "Rural astronomy centre located at Mallikarjun Vidyalaya, Canacona"
+        }
+        ,
+        {
+            place: 'Sanquelim',
+            timings: '*Contact for timings',
+            days:"",
+            coordinator: 'Videsh Khandeparkar',
+            Contact: '9420818948',
+            details: "The Sanquelim centre was inaugurated in Ravindra Bhavan, Sanquelim in 2015."
+        }
     ]
 }
 
