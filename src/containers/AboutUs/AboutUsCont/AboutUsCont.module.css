@@ -26,6 +26,10 @@
     border-bottom: 5px solid #EC741D;
 }
 
+.title {
+    font-weight: 700;
+}
+
 @media (max-width: 800px){
     .tabCont {
         justify-content: space-between;

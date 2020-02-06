@@ -51,11 +51,11 @@ const Team = () => {
 //exec council tab
 const Exec = () => {
     return (
-        <div style={{ display: "flex", flexDirection: "column", alignItems:"center" }}>
+        <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
             <h2 style={{ alignSelf: "center" }}>
-            Executive Council
+                Executive Council
             </h2>
-            <p style={{fontSize:'1.3em'}}>
+            <p style={{ fontSize: '1.3em' }}>
                 <ul>
                     <li>Anirudh Borkar</li>
                     <li>Mohan Chari</li>
@@ -66,7 +66,7 @@ const Exec = () => {
                     <li>Shrikant Nagvekar</li>
 
                 </ul>
-                     
+
             </p>
         </div>
     );
@@ -75,17 +75,24 @@ const Exec = () => {
 //adv tab
 const Adv = () => {
     return (
-        <div style={{ display: "flex", flexDirection: "column", alignItems:"center" }}>
+        <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
             <h2 style={{ alignSelf: "center" }}>
-                 Advisory Council
+                Advisory Council
             </h2>
-            <p style={{fontSize:'1.3em'}}>
+            <p style={{ fontSize: '1.3em' }}>
                 <ul>
-                    <li>President: Satish Nayak</li>
-                    <li>Vice President: Govind Potekar and Sangeeta Naik</li>
-                    <li>Joint Secretary and Treasurer: Devansh Cholera</li>
-                    <li>Councillors: Jayant Karn, Nancy Sequeira, Shashank Saudagar, Khalid Chauhan, Helen Rego</li>
-                </ul>      
+                    <li><span className={classes.title}>President:</span> Satish Nayak</li>
+                    <li><span className={classes.title}>Vice President:</span> Govind Potekar and Sangeeta Naik</li>
+                    <li><span className={classes.title}>Joint Secretary and Treasurer:</span> Devansh Cholera</li>
+                    <li><span className={classes.title}>Councillors:</span> <ul>
+                        <li>Helen Rego</li>
+                        <li>Khalid Chauhan</li>
+                        <li>Shashank Saudagar</li>
+                        <li>Nancy Sequeira</li>
+                        <li>Jayant Karn</li>
+                    </ul>
+                    </li>
+                </ul>
             </p>
         </div>
     );
