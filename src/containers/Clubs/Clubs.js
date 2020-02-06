@@ -11,7 +11,7 @@ const Clubs = () => {
             <div className={classes.Container}>
                 <h1>Clubs</h1>
                 {data.map((item)=>{
-                    return <ClubsCard item={item}/>
+                    return <ClubsCard key={Math.random()} item={item}/>
                 })}
             </div>
         </Layout>
