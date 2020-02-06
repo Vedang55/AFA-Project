@@ -24,4 +24,4 @@ const EquipmentCard = () => {
         </div>);
 }
 
-export default EquipmentCard;
+export default React.memo(EquipmentCard);

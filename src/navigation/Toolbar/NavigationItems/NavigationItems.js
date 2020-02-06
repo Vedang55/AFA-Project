@@ -15,4 +15,4 @@ const NavigationItems = (props) => {
     );
 }
 
-export default NavigationItems;
+export default React.memo(NavigationItems);

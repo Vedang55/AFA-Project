@@ -1,11 +1,10 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import classes from './Equipment.module.css';
 import Layout from '../../components/Layouts/Layout';
 import EquipmentCard from './EquipmentCard/EquipmentCard'
 
 
 const Equipment = () => {
-
 
     return (
         <Layout>
@@ -19,4 +18,4 @@ const Equipment = () => {
     );
 }
 
-export default Equipment;
+export default React.memo(Equipment);

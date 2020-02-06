@@ -22,4 +22,4 @@ const SideDrawer = (props) => {
     );
 }
 
-export default SideDrawer;
+export default React.memo(SideDrawer);

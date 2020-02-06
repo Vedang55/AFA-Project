@@ -5,8 +5,6 @@ import ClubsCard from './ClubsCard/ClubsCard'
 
 
 const Clubs = () => {
-
-
     return (
         <Layout>
             <div className={classes.Container}>
@@ -19,4 +17,4 @@ const Clubs = () => {
     );
 }
 
-export default Clubs;
+export default React.memo(Clubs);
