@@ -30,14 +30,30 @@ const Toolbar = (props) => {
         const shrinkOn = 150;
 
         if (distanceY > shrinkOn) {
-            const cc = [...containerClasses];
-            cc[1] = classes.Small;
-            setContainerClasses(cc);
+            setContainerClasses((state) => {
+                if (state[1] !== classes.Small) {
+                    const cc = [...state];
+                    cc[1] = classes.Small;
+                    return cc;
+                }
+                else {
+                    return state;
+                }
+            });
+
+
         }
         else {
-            const cc = [...containerClasses];
-            cc[1] = classes.Big;
-            setContainerClasses(cc);
+            setContainerClasses((state) => {
+                if (state[1] !== classes.Big) {
+                    const cc = [...state];
+                    cc[1] = classes.Big;
+                    return cc;
+                }
+                else {
+                    return state;
+                }
+            });
         }
     }
 
@@ -62,4 +78,4 @@ const Toolbar = (props) => {
     );
 }
 
-export default Toolbar;
+export default React.memo(Toolbar);

@@ -18,13 +18,13 @@
 
 
 
-@media (min-width:1000px){
+@media (min-width:501px){
     .image-gallery-image {
         height: 60vh;
         
         width: auto !important;
         max-width: 100%;
-        border: 15px solid gray;
+
         box-sizing: border-box;
     }
 }
