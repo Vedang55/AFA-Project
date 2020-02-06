@@ -27,15 +27,7 @@ const LandingPage = () => {
                 <div className={[classes.Sec2, classes.seccontainer].join(' ')}>
                     <h1>About the organisation</h1>
                     <p>
-                        The Association of Friends of Astronomy (Goa) was set up in December 1982 by a group of enthusiastic Astronomy
-                        buffs. The Association opens its arms to all individuals who are mesmerized by the awesome universe and are
-                        curious to know more about it. Activities like workshops, sky observations, lectures, film screenings,
-                        exhibitions etc are regularly organized all over Goa for the popularization of science and astronomy among
-                        students and general public. As on 2014, Association of Friends of Astronomy (Goa) has 8 Centers in Goa:
-                        The main unit at Panjim and sub units at Margao, Mapusa, Vasco, Porvorim and Canacona and Rural astronomy
-                        centres at Morjim &amp; Borim. Any individual regardless of age and education is welcome to join the
-                        Association and enrich his life with the beautiful and timeless hobby of appreciating The Mother of
-                        Science…ASTRONOMY.
+                    In the year 1982 due to the zeal and perseverance of a Panaji resident and retired government officer Mr Percival Noronha, the Association of Friends of Astronomy (AFA) was founded by a group of astronomy enthusiasts in Panaji, Goa. Amateur astronomy enthusiasts and tourists are encouraged to stop by and are eagerly helped by the seasoned locals. Dedicated to the appreciation and popularization of Amateur Astronomy, the association was successful in founding the Public Astronomical Observatory at Panaji which is voluntarily managed by the association and supported by the Department of Science, Technology & Environment (Government of Goa), and is the first public observatory in India.
                     </p>
                 </div>
 

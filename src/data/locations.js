@@ -1,25 +1,60 @@
 const locationData = {
     locations: [
         {
-            place: 'Panaji',
-            timings: '9.00 to 10.00',
-            coordinator: '',
-            Contact: '', 
-            details: "s standard dummy text ever since the 1500s, when an e and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum"
+            place: 'Panjim',
+            timings: '7 p.m. to 9 p.m.',
+            days: 'Monday-Saturday',
+            coordinator: 'Videsh Khandeparkar',
+            Contact: '9923257267',
+            details: "The observatory was established in 1990 and is located on the terrace of the Junta House building, 18th June Road, Panaji, the capital city of Goa. The observatory is easy to find and accessible via all forms of public transport. It is the first public observatory to be set up in India."
         },
         {
             place: 'Margao',
-            timings: '',
-            coordinator: 'dsdsd',
-            Contact: '090009', 
-            details: "Inaugurated in 2003 and currently functions  at Ravindra Bhavan, Margao. The Observtaory is open for general public on weekend ie Saturday and Sunday from 14th Novemebr to 31st May."
+            timings: '7 p.m. to 9 p.m.',
+            days: 'Saturday & Sunday',
+            coordinator: 'Gaurav Dhumatkar',
+            Contact: '9923544025',
+            details: "In 1998, a significant step was taken with the opening of an observatory in Margao, extending the activities to the entire taluka of Salcete. The observatory was inaugurated in 2003 and currently functions at Ravindra Bhavan, Margao."
         },
         {
             place: 'Mapusa',
-            timings: '',
-            coordinator: '',
-            Contact: '', 
-            details: "Started in 2010 and functions at VAze hall, 1st floor, Boshan Bldg, Near Bodgeshwar temple , Mapusa. This observatory is open to public every Friday in fair season. Rural Astronomy Centers: Rural Astronomy Center, Vidyaprasarak High School, Morjim and Rural Astronomy Center, Vivekananad Vidyalaya, Borim were set up in 2011 and 2012 respectively. Regular activities and sky observation is conducted in these centers. "
+            timings: '7 p.m. to 9 p.m.',
+            days:"Friday",
+            coordinator: 'Rudra Sawant',
+            Contact: '9881180530',
+            details: "The centre was started in 2010 and functions at Saraswat Vidhyalaya Higher Secondary School, Mapusa."
+        },
+        {
+            place: 'Vasco',
+            timings: '7 p.m. to 9 p.m.',
+            days:"Friday",
+            coordinator: 'Mohammad Kaif',
+            Contact: '8830251246',
+            details: "The Vasco centre was set up in 2013 at Ravindra Bhavan, Baina, Vasco. Sky observation and other astronomy activities are held every Sunday"
+        },
+        {
+            place: 'Porvorim',
+            timings: '7 p.m. to 9 p.m.',
+            days:"Tuesday",
+            coordinator: 'Shekar Bidye',
+            Contact: '9823758456',
+            details: "The Porvorim centre is run in collaboration with L. D. Samant Memorial High School and was inaugurated in 2014. Regular activities are conducted every Tuesday."
+        },
+        {
+            place: 'Morjim',
+            timings: '*Contact for timings',
+            days:"",
+            coordinator: 'Padmakar Naik',
+            Contact: '7798717974',
+            details: "Set up in 2011, the rural astronomy centre is located at Vidyaprasarak High School, Morjim."
+        },
+        {
+            place: 'Borim',
+            timings: '*Contact for timings',
+            days:"",
+            coordinator: 'Chitraranjan',
+            Contact: '7798882213',
+            details: "Set up in 2012, the rural astronomy centre is located at Vivekanand Vidyalaya, Borim."
         }
     ]
 }

@@ -176,7 +176,7 @@ export default [
         ]
     },
     {
-        name: "photography Club",
+        name: "Photography Club",
         description: "Anybody wanting to pair the thrilling hobby of photography to astronomy is welcome to join our astrophotography team and venture into many new forms of scientific photography like…",
         image:"photo.png",
         activities: [
