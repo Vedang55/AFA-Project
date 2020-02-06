@@ -34,14 +34,21 @@
         align-items: stretch; 
     }
 
+
     .textCont{
         width: 100%;
     }
+    
     .imageCont {
         height: 25vh;
         width: 100%;
         padding-top: 0;
     }
+
+    .imageCont > img {
+        height: 100%;
+    }
+
     .textCont > h1 {
         font-size: 5.3vw;
         font-weight: 500;

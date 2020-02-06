@@ -7,13 +7,14 @@
 .tabCont {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .tabCont > h2 {
     cursor: pointer;
     padding : 5px 0;
     color: gray;
+    margin: 0 4vw
 }
 
 .tabCont > h2:hover{
