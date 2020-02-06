@@ -1,5 +1,6 @@
+import React from 'react'
 const auxi = (props) => {
     return props.children;
 }
 
-export default auxi;
+export default React.memo(auxi);

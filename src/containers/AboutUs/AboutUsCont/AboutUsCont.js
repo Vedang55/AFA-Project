@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import classes from './AboutUsCont.module.css';
 import data from '../../../data/aboutpage'
 
@@ -33,7 +33,7 @@ const Adv = () => {
                 Advisory Council
             </h2>
             <p>
-                <pre style={{fontSize: "inherit", fontFamily:"inherit", whiteSpace:"pre-wrap"}}>
+                <pre style={{ fontSize: "inherit", fontFamily: "inherit", whiteSpace: "pre-wrap" }}>
                     {data.advisorycouncil}
                 </pre>
             </p>
@@ -49,7 +49,7 @@ const Exec = () => {
                 Executive Council
             </h2>
             <p>
-                <pre style={{fontSize: "inherit", fontFamily:"inherit", whiteSpace:"pre-wrap"}}>
+                <pre style={{ fontSize: "inherit", fontFamily: "inherit", whiteSpace: "pre-wrap" }}>
                     {data.executivecouncil}
                 </pre>
             </p>

@@ -8,7 +8,7 @@ const ClubsCard = () => {
     return (
         <div className={classes.Container}>
             <div className={classes.imageCont}>
-                <img src={require('../../../assets/images/AFA-logo.png')}/>
+                <img src={require('../../../assets/images/AFA-logo.png')} alt="club"/>
             </div>
 
             <div className={classes.textCont}>

@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import classes from './Equipment.module.css';
 import Layout from '../../components/Layouts/Layout';
 import EquipmentCard from './EquipmentCard/EquipmentCard'

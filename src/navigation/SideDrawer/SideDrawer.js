@@ -16,7 +16,7 @@ const SideDrawer = (props) => {
         <Auxi>
             <Backdrop show={props.open} clicked={props.closed}/>
             <div className={attachedClasses.join(' ')}>
-                <NavigationItems style={{ flexDirection: 'column', 'justify-content': 'flex-start' }} />
+                <NavigationItems style={{ flexDirection: 'column', justifyContent: 'flex-start' }} />
             </div>
         </Auxi>
     );

@@ -1,4 +1,3 @@
-import ImageGallery from 'react-image-gallery';
 import React from 'react';
 import Layout from '../../components/Layouts/Layout';
 import classes from './AboutUs.module.css';
