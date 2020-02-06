@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import classes from './Toolbar.module.css';
 import Logo from '../../components/Logo/Logo'
 import NavigationItems from '../../navigation/Toolbar/NavigationItems/NavigationItems';
-import { NavLink } from 'react-router-dom';
 
 const Toolbar = (props) => {
 

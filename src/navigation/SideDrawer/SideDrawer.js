@@ -4,10 +4,12 @@ import classes from './SideDrawer.module.css';
 import Auxi from '../../hoc/auxi';
 import Backdrop from '../../components/UI/Backdrop/Backdrop';
 
+const styleProp = { flexDirection: 'column', justifyContent: 'flex-start' };
+
 const SideDrawer = (props) => {
-    let attachedClasses = [classes.SideDrawer, classes.Close];
+    const attachedClasses = [classes.SideDrawer, classes.Close];
     if(props.open){
-        attachedClasses = [classes.SideDrawer, classes.Open];
+        attachedClasses[1] = classes.Open;
     }
 
     return (
@@ -16,7 +18,7 @@ const SideDrawer = (props) => {
         <Auxi>
             <Backdrop show={props.open} clicked={props.closed}/>
             <div className={attachedClasses.join(' ')}>
-                <NavigationItems style={{ flexDirection: 'column', justifyContent: 'flex-start' }} />
+                <NavigationItems style={styleProp} />
             </div>
         </Auxi>
     );

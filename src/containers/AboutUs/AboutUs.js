@@ -6,7 +6,7 @@ import AboutUsCont from './AboutUsCont/AboutUsCont'
 
 
 
-class AboutUs extends React.Component {
+class AboutUs extends React.PureComponent {
     render() {
         return (
             <Layout>
