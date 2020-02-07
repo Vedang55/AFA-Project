@@ -61,13 +61,13 @@
     }
     
     .imageCont {
-        height: 25vh;
+        
         width: 100%;
         padding: 0;
     }
 
     .imageCont > img {
-        height: 100%;
+        max-height: 40vh;
     }
 
     .textCont > h1 {

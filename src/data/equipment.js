@@ -11,7 +11,7 @@ export default [
     },
     {
         name: "Sky-Watcher NEQ6 Pro GoTo Equatorial Mount",
-        image: 'skywatcher-Synta-HEQ5-PRO-SynScan.jpg',
+        image: 'SKYWATCHER-NEQ6-PRO-MOUNT-WITH-STEEL-TRIPOD.jpg',
         description: 'The Sky-Watcher SynScan NEQ6 Pro mount was designed for use by novices and experts alike. This sturdy, computerized mount, with a 40 lb. payload capacity provides extremely high precision tracking and sports a built-in auto guider port. Even the most demanding amateur astronomers will be impressed by the capability of the Skywatcher NEQ6 Pro mount for astrophotography, and novices will appreciate the user-friendly menu that allows automatic slewing to 42,900+ objects. Even an inexperienced astronomer can master its variety of features in a few observing sessions. '
     }
     ,

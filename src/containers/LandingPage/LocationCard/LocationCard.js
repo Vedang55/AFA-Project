@@ -10,7 +10,7 @@ const LocationCard = (props) => {
                 {props.data.days !== "" ?  `"${props.data.days}"` : undefined }
               </p>
             <hr />
-            <p style={{ opacity: 0.7, fontWeight: 600 }}>{props.data.details}</p>
+            <p style={{ opacity: 0.75, fontWeight: 400 }}>{props.data.details}</p>
             <span>Co-ordinator: {props.data.coordinator}</span>
             <span>Contact: <u>{props.data.Contact}</u></span>
             <span className={classes.directionButton}>Get directions to observatory</span>
