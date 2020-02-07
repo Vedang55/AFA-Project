@@ -21,7 +21,7 @@
 
 .Sec1 {
     padding: 100px 6vw;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .Sec1 h1 {
