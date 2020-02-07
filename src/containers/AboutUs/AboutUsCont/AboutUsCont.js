@@ -79,6 +79,8 @@ const Adv = () => {
                 <ul style={{ fontSize: '1.3em' }}>
                     <li><span className={classes.title}>President:</span> Satish Nayak</li>
                     <li><span className={classes.title}>Vice President:</span> Govind Potekar and Sangeeta Naik</li>
+                    <li><span className={classes.title}>Secretary: </span> Erin Viegas </li>
+                    
                     <li><span className={classes.title}>Joint Secretary and Treasurer:</span> Devansh Cholera</li>
                     <li><span className={classes.title}>Councillors:</span> <ul>
                         <li>Helen Rego</li>
