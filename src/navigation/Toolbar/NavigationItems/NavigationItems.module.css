@@ -1,13 +1,21 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
+
 .Nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: flex-end;
-    box-sizing: border-box;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 .Nav a {
     padding: 2vh 1.5vw;
     height: 100%;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     text-decoration: none;
     color: white;
     font-size: 19px;
