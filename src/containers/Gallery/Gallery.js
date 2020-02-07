@@ -32,11 +32,11 @@ class MyGallery extends React.Component {
                 <div className={classes.Container}>
                     <h1>Gallery</h1>
                     <div className={classes.GalleryContainer}>
-                        <ImageGallery items={images} lazyLoad={true} useBrowserFullscreen={false} showFullscreenButton={false}/>
+                        <ImageGallery items={images} lazyLoad={true} useBrowserFullscreen={true} showFullscreenButton={true}/>
                     </div>
 
                     <div className={classes.GalleryContainer}>
-                        <ImageGallery items={images} lazyLoad={true} useBrowserFullscreen={false} showFullscreenButton={false}/>
+                        <ImageGallery items={images} lazyLoad={true} useBrowserFullscreen={true} showFullscreenButton={true}/>
                     </div>
                 </div>
             </Layout>

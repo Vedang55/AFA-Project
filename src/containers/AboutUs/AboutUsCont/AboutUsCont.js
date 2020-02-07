@@ -54,8 +54,8 @@ const Exec = () => {
             <h2 style={{ alignSelf: "center" }}>
                 Executive Council
             </h2>
-            <p style={{ fontSize: '1.3em' }}>
-                <ul>
+
+            <ul style={{ fontSize: '1.3em' }}>
                     <li>Anirudh Borkar</li>
                     <li>Mohan Chari</li>
                     <li>Ramesh Kumar</li>
@@ -65,8 +65,6 @@ const Exec = () => {
                     <li>Shrikant Nagvekar</li>
 
                 </ul>
-
-            </p>
         </div>
     );
 }
@@ -78,8 +76,7 @@ const Adv = () => {
             <h2 style={{ alignSelf: "center" }}>
                 Advisory Council
             </h2>
-            <p style={{ fontSize: '1.3em' }}>
-                <ul>
+                <ul style={{ fontSize: '1.3em' }}>
                     <li><span className={classes.title}>President:</span> Satish Nayak</li>
                     <li><span className={classes.title}>Vice President:</span> Govind Potekar and Sangeeta Naik</li>
                     <li><span className={classes.title}>Joint Secretary and Treasurer:</span> Devansh Cholera</li>
@@ -92,7 +89,6 @@ const Adv = () => {
                     </ul>
                     </li>
                 </ul>
-            </p>
         </div>
     );
 }
