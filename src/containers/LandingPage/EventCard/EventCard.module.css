@@ -1,3 +1,13 @@
+.Container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-left: 1px solid #EC741D;
+    padding: 0 0 0 10px;
+    margin-top: 8vh;
+    box-sizing: border-box;
+}
+
 .header {
     display: flex;
     flex-direction: row;
@@ -16,13 +26,7 @@
     color: #EC741D;
 }
 
-.Container {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    border-left: 1px solid #EC741D;
-    padding: 0 0 0 10px;
-}
+
 
 @media (max-width:500px){
     .header h2, h3 {

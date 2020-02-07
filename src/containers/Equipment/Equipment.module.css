@@ -1,12 +1,10 @@
 .Container {
-    padding-top: 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
     color: black;
-    padding-left: 8vw;
-    padding-right: 8vw;
     box-sizing: border-box;
+    padding: 100px 8vw 3vh 8vw
     
 }
 

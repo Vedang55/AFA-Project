@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import classes from './AboutUsCont.module.css';
-import data from '../../../data/aboutpage'
 
 
 //founder tab
@@ -10,7 +9,7 @@ const Founder = () => {
             <h2 style={{ alignSelf: "center" }}>
                 Founder
             </h2>
-            <img style={{ objectFit: "contain", width: "100%", maxHeight: "70vh" }} src={require('../../../assets/images/aboutus/Founder.jpg')}></img>
+            <img alt='Founder' style={{ objectFit: "contain", width: "100%", maxHeight: "70vh" }} src={require('../../../assets/images/aboutus/Founder.jpg')}></img>
             <p>
                 Percival Noronha (26/7/1923 - 19/8/2019) was an exceptional man. Having served the Goa government in high offices of civil service, both in the Portuguese and post liberation era, he was multitalented, multifaceted and gifted with unique qualities.
     At 60 on retirement in 1982, he started the second innings of life with even more gusto and enthusiasm and founded The Indian Heritage Society (Goa chapter) & The Association of Friends of Astronomy (Goa). He guided  the Association of Friends of Astronomy till his last days and is fondly remembered as a beacon of  strength and support by the members. He will always be remembered and respected for his demeanor,  kindness, politeness, leadership and joyous nature by the people whose lives he touched. PERCIVAL NORONHA's wise words " Honest intentions always beget Honest results " will forever continue to remain in the heart of AFAians and  inspire them to lead the institution to great heights.
@@ -27,7 +26,7 @@ const Team = () => {
             <h2 style={{ alignSelf: "center" }}>
                 Team
             </h2>
-            <img style={{ objectFit: "contain", width: "100%", maxHeight: "70vh" }} src={require('../../../assets/images/aboutus/AFA.jpeg')}></img>
+            <img alt='Team' style={{ objectFit: "contain", width: "100%", maxHeight: "70vh" }} src={require('../../../assets/images/aboutus/AFA.jpeg')}></img>
 
             <h4>ASSOCIATION OF FRIENDS OF ASTRONOMY (GOA) <br /> (Registered NGO: Reg.No. 51/Goa/82)</h4>
 
@@ -35,7 +34,7 @@ const Team = () => {
                 The Association of Friends of Astronomy (Goa) was set up in December 1982 by a group of enthusiastic Astronomy buffs. The Association opens its arms to all individuals who are mesmerized by the awesome universe and are curious to know more about it. Activities like workshops, sky observations, lectures, film screenings, exhibitions etc are regularly organized all over Goa for the popularization of science and astronomy among students and the general public. Association of Friends of Astronomy (Goa) has 8 Centers in Goa: The main unit at Panjim and subunits at Margao, Mapusa, Vasco, Porvorim, Canacona, Sakhali and Rural astronomy centres at Morjim & Borim. Any individual regardless of age and education is welcome to join the Association and enrich his life with the beautiful and timeless hobby of appreciating The Mother of Science, ASTRONOMY.
             </p>
 
-            <img style={{ objectFit: "contain", width: "100%", maxHeight: "70vh" }} src={require('../../../assets/images/aboutus/IMG_8028.JPG')}></img>
+            <img alt='Team' style={{ objectFit: "contain", width: "100%", maxHeight: "70vh" }} src={require('../../../assets/images/aboutus/IMG_8028.JPG')}></img>
 
             <h4>
                 PUBLIC ASTRONOMICAL OBSERVATORY

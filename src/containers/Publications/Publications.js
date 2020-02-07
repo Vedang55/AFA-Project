@@ -11,7 +11,7 @@ const Publications = () => {
                 <h1>Publications</h1>
                 {PublicationData.map((item) => {
                     return (
-                        <PublicationsCard item={item}/>
+                        <PublicationsCard key={Math.random()} item={item}/>
                     );
                 })}
             </div>

@@ -4,7 +4,7 @@
     align-items: flex-start;
     max-width: 100vw;
     box-sizing: border-box;
-    margin: 20px 0;
+    margin: 45px 0;
 }
 
 .imageCont {
@@ -32,6 +32,7 @@
         flex-direction: column;
         height: auto;
         align-items: stretch; 
+        margin: 25px 0;
     }
 
 
@@ -42,7 +43,7 @@
     .imageCont {
         height: 25vh;
         width: 100%;
-        padding-top: 0;
+        padding: 0;
     }
 
     .imageCont > img {
