@@ -11,7 +11,7 @@ const EventCard = (props) => {
             </div>
 
             <p>
-                {props.item.place} <br />
+                {props.item.location} <br />
                 {props.item.description}
             </p>
         </div>

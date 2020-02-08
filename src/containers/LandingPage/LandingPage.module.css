@@ -50,10 +50,18 @@
     background-color: #EC741D;
     border-radius: 15px;
     border: none;
-    width: 150px;
+    width: 170px;
     height: 50px;
     cursor: pointer;
     outline:none;
+    color: white;
+    font-weight: 600;
+    margin-top: 15px;
+    font-size: 1em;
+}
+
+.Sec1 p {
+    font-weight: 600;
 }
 
 
