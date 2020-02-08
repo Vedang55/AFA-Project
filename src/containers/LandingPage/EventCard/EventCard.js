@@ -6,7 +6,7 @@ const EventCard = (props) => {
         <div className={classes.Container}>
             <div className={classes.header}>
                 <h2>{props.item.name}, <span>{props.item.date}</span></h2>
-                {props.item.link ? <a target="_blank" href={props.item.link}><h3>Add event to calendar</h3></a> : undefined}
+                {props.item.link ? <a target="_blank" href={props.item.link} style={{textDecoration:"none"}}><h3>Add event to calendar</h3></a> : undefined}
                 
             </div>
 
