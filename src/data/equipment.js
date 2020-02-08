@@ -1,11 +1,11 @@
 export default [
     {
-        name: "Celestron 14\" Schmidt-Cassegrain",
+        name: `Celestron 14'' Schmidt-Cassegrain`,
         image: 'C14 XLT.jpg',
         description: 'Outfitted with an oversized aperture, long effective focal length, and their proprietary StarBright XLT optical coatings, the Celestron C14-AF XLT 14" f/11 Schmidt-Cassegrain Telescope provides high power and portability. The coating system consists of anti-reflection coatings on the corrector plate, highly reflective index mirror coatings, and low-absorption/high-transmission glass components to ensure that the maximum amount of light is gathered and transmitted to your eye. This system ensures bright and clear high-contrast images with accurate colour rendition across the entire visual spectrum without visible distortion at the edges.'
     },
     {
-        name: "GSO 8\" Professional Dobsonian",
+        name: `GSO 8'' Professional Dobsonian`,
         image: 'gso-8inch-pro-dob.jpg',
         description: 'This classic Dobsonian telescope is powerful and transportable. The 8" aperture is perfect for Moon and Planets but also for Nebular objects and Galaxies. This telescope is also very transportable and easy to use and is an ideal telescope for beginners.'
     },

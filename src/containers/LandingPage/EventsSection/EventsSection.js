@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import EventCard from '../EventCard/EventCard';
 import classes from './EventsSection.module.css';
+import ReactLoading from 'react-loading';
 
 
 
@@ -35,14 +36,25 @@ const EventSection = () => {
                 setEvents(eventData.filter(function (element) {
                     return element !== undefined;
                 }));
+                setLoaded(1);
             })
             .catch((error) => {
-                console.error(error);
+                setLoaded(-1);
             });
     }, []);
 
+
+
     const [events, setEvents] = useState([]);
     const [expand, setExpand] = useState(0);
+    const [loaded, setLoaded] = useState(0);
+
+    useEffect(() => {
+        if (expand) {
+            document.getElementById('scrollto').scrollIntoView(false);
+        }
+    }, [expand]);
+
 
     const toggleExpand = () => {
         setExpand((state) => {
@@ -50,33 +62,51 @@ const EventSection = () => {
         })
     }
 
-    const eventCards = [];
+    
 
-    for (let i = 0; i < events.length && i < 2; i++){
-        eventCards[i] =  <EventCard key={Math.random()} item={events[i]}/>
+    if (loaded === 1) {
+        const eventCards = [];
+        for (let i = 0; i < events.length && i < 2; i++) {
+            eventCards[i] = <EventCard key={Math.random()} item={events[i]} />
+        }
+
+        return (
+            <div className={classes.eventCardContainer} id={'scrollto'}>
+                {eventCards}
+
+                {
+                    events.map((item, index) => {
+                        if (index > 1 && expand) {
+                            return <EventCard key={Math.random()} item={item} />
+                        }
+                        else {
+                            return undefined;
+                        }
+                    })
+                }
+
+                {events.length > 2 ? <p onClick={toggleExpand} className={classes.showMore}>
+                    {!expand ? `Show ${events.length - 2} more` : 'Show Less'}
+                </p> : undefined}
+
+            </div>
+        );
+    }
+    else if (loaded === 0) {
+        return (
+            <div className={classes.loadingCont}>
+                <ReactLoading type={'bubbles'} height={100} width={100} color={'white'} />
+            </div>
+        )
     }
 
-    return (
-        <div className={classes.eventCardContainer}>
-            {eventCards}
-
-            {
-                events.map((item, index) => {
-                    if (index > 1 && expand) {
-                        return <EventCard key={Math.random()} item={item} />
-                    }
-                    else {
-                        return undefined;
-                    }
-                })
-            }
-
-            {events.length > 2 ? <p onClick={toggleExpand} style={{ color: '#EC741D', cursor: 'pointer' }}>
-               {!expand ? `Show ${events.length - 2} more` : 'Show Less'}
-                </p> : undefined} 
-
-        </div>
-    );
+    else{
+        return (
+            <div className={classes.loadingCont}>
+                <h4>Failed to load event data, please refresh page</h4>
+            </div>
+        )
+    }
 }
 
 export default EventSection;
