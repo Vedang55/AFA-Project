@@ -1,7 +1,8 @@
 /* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
 
+
 .seccontainer {
-    padding: 30px 6vw;
+    padding: 40px 6vw;
     background-color: black;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
@@ -120,8 +121,10 @@
 @media (max-width: 500px) {
 
     .seccontainer {
+        
+        padding: 10vh 2vw;
         padding-bottom: 0;
-        padding: 4vh 2vw
+
     }
     /* section 1 */
     .Sec1 {
@@ -164,13 +167,6 @@
         font-size: 1em;
     }
 
-    .Sec4{
-        
-    }
-
-    .Sec5 {
-
-    }
 
     .Sec6{
         padding-left: 4vw;

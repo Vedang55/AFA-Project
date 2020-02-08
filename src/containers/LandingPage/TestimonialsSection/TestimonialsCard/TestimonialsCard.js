@@ -12,9 +12,9 @@ const TestimonialsCard = (props) => {
                 -{props.by}, &nbsp;
                 <span style={{fontWeight: "300"}}>{props.place}</span>
             </h4>
-            <h4 style={{ marginTop: 0, fontWeight: "300"}}>
+            {/* <h4 style={{ marginTop: 0, fontWeight: "300"}}>
                 {props.date}
-            </h4>
+            </h4> */}
         </div>);
 }
 

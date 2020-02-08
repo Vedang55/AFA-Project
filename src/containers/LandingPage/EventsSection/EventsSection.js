@@ -51,7 +51,7 @@ const EventSection = () => {
 
     useEffect(() => {
         if (expand) {
-            document.getElementById('scrollto').scrollIntoView(false);
+            document.getElementById('scrollto').scrollIntoView({block: "end", inline: "nearest", behavior:"smooth"});
         }
     }, [expand]);
 

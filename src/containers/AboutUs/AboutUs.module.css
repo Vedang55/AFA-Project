@@ -1,7 +1,7 @@
 /* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
 
 .Container {
-    padding: 100px 10vw 20px 10vw;
+    padding: 100px 18vw 20px 18vw;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

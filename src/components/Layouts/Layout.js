@@ -3,6 +3,7 @@ import classes from './Layout.module.css';
 import Toolbar from '../../navigation/Toolbar/Toolbar';
 import SideDrawer from '../../navigation/SideDrawer/SideDrawer';
 import WrapperComp from '../WrapperComp';
+import Footer from '../Footer/Footer'
 
 //wrapper comp added for performance (react memo)
 
@@ -38,6 +39,10 @@ const Layout = (props) => {
                     {props.children}
                 </WrapperComp>
             </main>
+
+            <footer className={classes.footerCont}>
+                {/* <Footer /> */}
+            </footer>
 
         </div>
     );

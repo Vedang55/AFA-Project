@@ -5,6 +5,11 @@ export default [
         description: 'Outfitted with an oversized aperture, long effective focal length, and their proprietary StarBright XLT optical coatings, the Celestron C14-AF XLT 14" f/11 Schmidt-Cassegrain Telescope provides high power and portability. The coating system consists of anti-reflection coatings on the corrector plate, highly reflective index mirror coatings, and low-absorption/high-transmission glass components to ensure that the maximum amount of light is gathered and transmitted to your eye. This system ensures bright and clear high-contrast images with accurate colour rendition across the entire visual spectrum without visible distortion at the edges.'
     },
     {
+        name: `GSO 10'' & 6'' f/4 Imaging Newtonian telescope`,
+        image: 'gso-10-f4-1.jpg',
+        description: 'This compact and affordable 250mm (approx. 10") f/4 Newtonian optical tube assembly (OTA) from GSO has fast optics for imaging extended deep-sky objects with a DSLR, webcam, or dedicated astronomy camera. Lightweight and easy to guide, this little Newtonian comes ready to go out of the box with a 3.25" Crayford-style focuser with 2" eyepiece holder, dual split-hinged mounting rings, an 8x50 straight-through finder, and an 8" Vixen/Synta-style dovetail plate.'
+    },
+    {
         name: `GSO 8'' Professional Dobsonian`,
         image: 'gso-8inch-pro-dob.jpg',
         description: 'This classic Dobsonian telescope is powerful and transportable. The 8" aperture is perfect for Moon and Planets but also for Nebular objects and Galaxies. This telescope is also very transportable and easy to use and is an ideal telescope for beginners.'
