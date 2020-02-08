@@ -96,6 +96,7 @@ class MyGallery extends React.Component {
                         if (item.original === "" || item.original === undefined) {
                             newitem.original = item.thumbnail;
                         }
+                        // newitem.description = "sample description";
                         return newitem;
                     }),
                     events: eventsArr.filter(function (element) {
@@ -118,7 +119,6 @@ class MyGallery extends React.Component {
 
             ).catch((error) => {
                 this.setState({ loaded: -1 });
-                console.log(error);
             });
     }
 
@@ -133,11 +133,11 @@ class MyGallery extends React.Component {
                         <div className={classes.Container}>
                             <h1>Gallery</h1>
                             <div className={classes.GalleryContainer}>
-                                <ImageGallery items={this.state.astro} lazyLoad={true} useBrowserFullscreen={true} showFullscreenButton={true} />
+                                <ImageGallery  autoPlay={true} items={this.state.astro} lazyLoad={true} useBrowserFullscreen={true} showFullscreenButton={true} />
                             </div>
 
                             <div className={classes.GalleryContainer}>
-                                <ImageGallery items={this.state.events} lazyLoad={true} useBrowserFullscreen={true} showFullscreenButton={true} />
+                                <ImageGallery autoPlay={true} items={this.state.events} lazyLoad={true} useBrowserFullscreen={true} showFullscreenButton={true} />
                             </div>
                         </div> : <div className={classes.loadingCont}> {this.state.loaded === -1 ? <h4 style={{ color: 'black' }}>Failed to load image data, Refresh page</h4> : <ReactLoading type={'bubbles'} height={100} width={100} color={'black'} />}</div>}
                 }

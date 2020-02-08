@@ -1,6 +1,8 @@
 /* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
 
 .Container {
+    max-width: 900px;
+    margin: 0 auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -10,6 +12,17 @@
             flex-direction: column;
     -ms-flex-item-align: stretch;
         align-self: stretch;
+        
+}
+
+.tabSectionContainer {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+}
+
+.aboutUsText{
+    font-size: 1.3em;
 }
 
 .tabCont {

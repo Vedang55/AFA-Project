@@ -1,5 +1,5 @@
 .eventCardContainer {
-    margin: 0 10vw;
+    max-width: 1200px;
 }
 
 .showMore {

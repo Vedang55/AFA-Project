@@ -1,6 +1,6 @@
 export default [
     {
-        name: "Observers Club.",
+        name: "Observers Club",
         description: "Dedicated to promote observational astronomy as a hobby, members learn, practice, perfect and enjoy different sky gazing activities like constellation identification, special celestial events, Solar Astronomy, Lunar Astronomy, Planetary observation, Meteor Shower Observation, Observing Comets, Positional Astronomy, Variable star observation, Software, Cell phone astronomy, Star Parties, Messier Marathon and also act as resource persons at Outreach programs.",
         image: "observe.png",
         activities: [{

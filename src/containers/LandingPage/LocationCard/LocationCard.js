@@ -12,7 +12,7 @@ const LocationCard = (props) => {
             <hr />
             <p style={{ opacity: 0.75, fontWeight: 400, textAlign:"center" }}>{props.data.details}</p>
             <span>Co-ordinator: {props.data.coordinator}</span>
-            <span style={{borderBottom:'1px solid white', fontFamily: 'Arial'}}>Contact: {props.data.Contact}</span>
+            <span style={{borderBottom:'1px solid white', fontFamily: 'Arial'}}>Contact: <a style={{textDecoration: 'none', color:'white'}} href={`tel:${props.data.Contact}`}>{props.data.Contact}</a></span>
             <span className={classes.directionButton}>Get directions to observatory</span>
         </div>
     );

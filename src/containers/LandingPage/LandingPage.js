@@ -14,10 +14,10 @@ const LandingPage = () => {
         <Layout stickyNavbar="true">
             <div className={classes.Container}>
                 <div className={[classes.Sec1, classes.seccontainer].join(' ')}>
-                    <h1 align='center'>The Universe is our playground</h1>
+                    <h1 align='center'>Your Journey through the Universe starts here</h1>
                     <h2 align='center'>Friends of Astronomy - Goa</h2>
-                    <p align='center'>Want to schedule a program at your organisation?</p>
-                    <button>Book a Program</button>
+                    <p align='center'>Want to schedule a programme at your organisation?</p>
+                    <button>Book a programme</button>
                     <div className={classes.downIcon}>
                         <FiChevronDown size={'100%'} />
                     </div>
