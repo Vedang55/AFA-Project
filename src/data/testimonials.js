@@ -1,6 +1,6 @@
 export default [
     {
-        text: `We stumbled upon the observatory by chance, walking the old town and so glad we did. All the kids are super enthusiastic about astronomy and happily showed us the different constellations. Keep up the good work and the learning. The world needs a lot more Astronomers, Scientists and curious minds.`,
+        text: `We stumbled upon the observatory by chance, walking the old town and so glad we did. All the kids are super enthusiastic about astronomy and happily showed us the different constellations. Keep up the good work and the learning. The world needs a lot more Astronomers, Scientists and curious minds`,
         date: '03rd March 2018',
         by: 'Sandeep and Christine',
         place: "Holland and Germany"
@@ -9,7 +9,7 @@ export default [
     {
         text: "The Universe is yours to Discover! We need to keep showing the wonderful cosmos with everyone, mainly the young audience. Thank you for this opportunity to be part of this adventure. Keep up the amazing work!",
         date: '16th Nov 2017',
-        by: 'Pedru Ruso',
+        by: 'Pedru Russo',
         place:'Assistant professor of astronomy & society at Leiden Observatory'
 
     },
@@ -17,14 +17,14 @@ export default [
         text: "Inspiring and humbling to meet so many passionate and accomplished young astronomers! I hope some of you can come to our activities at the Story of Space art science festival in Panjim this week. To Infinity…….and beyond!",
         dated: "11th Nov 2017",
         by: 'Nick Sayers',
-        place: "artist inspired by science, maths and astronomy"
+        place: "Artist inspired by science, maths and astronomy"
 
     },
     {
-        text: "Amazing Group, fantastic to see so much passion for learning from so many children and volunteers! Keep up the great work! ",
+        text: "Amazing Group, fantastic to see so much passion for learning from so many children and volunteers! Keep up the great work!",
         dated: "11th Nov 2017",
-        by: 'Megan Argo',
-        place: "Lecturer in astrophysics & Mathematics, University of Central Lancashire , Preston UK"
+        by: 'Dr. Megan Argo',
+        place: "Lecturer in astrophysics & Mathematics, University of Central Lancashire, Preston UK"
 
     },
     {
@@ -35,7 +35,7 @@ export default [
 
     },
     {
-        text: "It was a very nice experience for me to visit Astronomy club. As a retired, I shall try to come regularly.",
+        text: "It was a very nice experience for me to visit the Astronomy club. As a retired scientist, I shall try to come regularly.",
         dated: "20th January 2017",
         by: 'Dr. A S Unnikrishnan',
         place: "NIO Goa"

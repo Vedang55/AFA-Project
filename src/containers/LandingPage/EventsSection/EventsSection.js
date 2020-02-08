@@ -31,6 +31,9 @@ const EventSection = () => {
                             case '4':
                                 eventData[element['gs$cell'].row].description = element.content['$t']
                                 break
+                            case '5':
+                                eventData[element['gs$cell'].row].link = element.content['$t']
+                                break
                         }
                 });
                 setEvents(eventData.filter(function (element) {
@@ -51,7 +54,7 @@ const EventSection = () => {
 
     useEffect(() => {
         if (expand) {
-            document.getElementById('scrollto').scrollIntoView({block: "end", inline: "nearest", behavior:"smooth"});
+            document.getElementById('scrollto').scrollIntoView({ block: "end", inline: "nearest", behavior: "smooth" });
         }
     }, [expand]);
 
@@ -62,7 +65,7 @@ const EventSection = () => {
         })
     }
 
-    
+
 
     if (loaded === 1) {
         const eventCards = [];
@@ -100,7 +103,7 @@ const EventSection = () => {
         )
     }
 
-    else{
+    else {
         return (
             <div className={classes.loadingCont}>
                 <h4>Failed to load event data, please refresh page</h4>

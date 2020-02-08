@@ -6,7 +6,8 @@ const locationData = {
             days: 'Monday-Saturday',
             coordinator: 'Videsh Khandeparkar',
             Contact: '9923257267',
-            details: "The observatory was established in 1990 and is located on the terrace of the Junta House building, 18th June Road, Panaji, the capital city of Goa. The observatory is easy to find and accessible via all forms of public transport. It is the first public observatory to be set up in India."
+            details: "The observatory was established in 1990 and is located on the terrace of the Junta House building, 18th June Road, Panaji, the capital city of Goa. The observatory is easy to find and accessible via all forms of public transport. It is the first public observatory to be set up in India.",
+            locationLink : `https://www.google.com/maps/search/?api=1&query=15.497087,73.824911&query_place_id=ChIJfX0-mYXAvzsRrkPXKCeVFZE`
         },
         {
             place: 'Margao',
@@ -14,7 +15,10 @@ const locationData = {
             days: 'Saturday & Sunday',
             coordinator: 'Gaurav Dhumatkar',
             Contact: '9923544025',
-            details: "In 1998, a significant step was taken with the opening of an observatory in Margao, extending the activities to the entire taluka of Salcete. The observatory was inaugurated in 2003 and currently functions at Ravindra Bhavan, Margao."
+            details: "In 1998, a significant step was taken with the opening of an observatory in Margao, extending the activities to the entire taluka of Salcete. The observatory was inaugurated in 2003 and currently functions at Ravindra Bhavan, Margao.",
+            latlon : `15.285141,73.962989`, 
+            placeid : `ChIJ33R1A9-zvzsRLHk32Ee7wEA`,
+            locationLink : `https://www.google.com/maps/search/?api=1&query=15.285141,73.962989&query_place_id=ChIJ33R1A9-zvzsRLHk32Ee7wEA`
         },
         {
             place: 'Mapusa',

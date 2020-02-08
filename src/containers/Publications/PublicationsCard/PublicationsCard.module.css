@@ -3,7 +3,9 @@
 .Container {
 
     border-left: 2px solid #EC741D;
-    align-self: stretch;
+    -ms-flex-item-align: stretch;
+        -ms-grid-row-align: stretch;
+        align-self: stretch;
     padding-left: 1.5vw;
     margin: 4vh 0;
     

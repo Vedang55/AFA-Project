@@ -1,5 +1,6 @@
 /* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
 
+
 @import "~react-image-gallery/styles/css/image-gallery.css";
 
 
@@ -10,9 +11,6 @@
 }
 
 
-.image-gallery-slides{
-    /* overflow: visible; */
-}
 
 .image-gallery-thumbnails-wrapper.bottom::before {
     content: "Astrophotography";
