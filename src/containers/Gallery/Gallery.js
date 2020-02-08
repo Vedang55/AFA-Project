@@ -3,6 +3,7 @@ import React from 'react';
 import './Gallery.css';
 import Layout from '../../components/Layouts/Layout';
 import classes from './Gallery.module.css';
+import ReactLoading from 'react-loading';
 
 
 const images = [
@@ -32,7 +33,8 @@ class MyGallery extends React.Component {
 
     state = {
         astro: [],
-        events: []
+        events: [],
+        loaded: 0
     }
 
     componentDidMount = () => {
@@ -107,13 +109,17 @@ class MyGallery extends React.Component {
                             newitem.original = item.thumbnail;
                         }
                         return newitem;
-                    })
+                    }),
+                    loaded: 1
                 })
             }
 
 
 
-            );
+            ).catch((error) => {
+                this.setState({ loaded: -1 });
+                console.log(error);
+            });
     }
 
 
@@ -123,7 +129,7 @@ class MyGallery extends React.Component {
         return (
             <Layout>
                 {
-                    this.state.events.length > 0 ?
+                    this.state.loaded === 1 ?
                         <div className={classes.Container}>
                             <h1>Gallery</h1>
                             <div className={classes.GalleryContainer}>
@@ -133,8 +139,11 @@ class MyGallery extends React.Component {
                             <div className={classes.GalleryContainer}>
                                 <ImageGallery items={this.state.events} lazyLoad={true} useBrowserFullscreen={true} showFullscreenButton={true} />
                             </div>
-                        </div> : undefined
+                        </div> : <div className={classes.loadingCont}> {this.state.loaded === -1 ? <h4 style={{ color: 'black' }}>Failed to load image data, Refresh page</h4> : <ReactLoading type={'bubbles'} height={100} width={100} color={'black'} />}</div>}
                 }
+
+
+
             </Layout>
         );
     }
