@@ -13,7 +13,10 @@ const LocationCard = (props) => {
             <p style={{ opacity: 0.75, fontWeight: 400, textAlign:"center" }}>{props.data.details}</p>
             <span>Co-ordinator: {props.data.coordinator}</span>
             <span style={{ fontFamily: 'Arial'}}>Contact: <a style={{color:'white'}} href={`tel:${props.data.Contact}`}>{props.data.Contact}</a></span>
-            <a style={{textDecoration: 'none'}} href={props.data.locationLink} target="_blank"><span className={classes.directionButton}>Get directions to observatory</span></a>
+
+            {props.data.coordinates !== undefined ?
+            <a style={{textDecoration: 'none'}} href={`https://www.google.com/maps/search/?api=1&query=${props.data.coordinates}&query_place_id=${props.data.placeid}`} target="_blank"><span className={classes.directionButton}>Get directions to observatory</span></a> : undefined}
+            
         </div>
     );
 }

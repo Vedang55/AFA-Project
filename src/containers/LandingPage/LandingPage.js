@@ -15,7 +15,7 @@ const LandingPage = () => {
             <div className={classes.Container}>
                 <div className={[classes.Sec1, classes.seccontainer].join(' ')}>
                     <h1 align='center'>Your Journey through the Universe starts here</h1>
-                    <h2 align='center'>Friends of Astronomy - Goa</h2>
+                    <h2 align='center'>Association of Friends of Astronomy <br /> Goa</h2>
                     <p align='center'>Want to schedule a programme at your organisation?</p>
                     <button>Book a programme</button>
                     <div className={classes.downIcon}>

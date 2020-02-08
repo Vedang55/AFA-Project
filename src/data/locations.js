@@ -7,7 +7,9 @@ const locationData = {
             coordinator: 'Videsh Khandeparkar',
             Contact: '9923257267',
             details: "The observatory was established in 1990 and is located on the terrace of the Junta House building, 18th June Road, Panaji, the capital city of Goa. The observatory is easy to find and accessible via all forms of public transport. It is the first public observatory to be set up in India.",
-            locationLink : `https://www.google.com/maps/search/?api=1&query=15.497087,73.824911&query_place_id=ChIJfX0-mYXAvzsRrkPXKCeVFZE`
+            locationLink : `https://www.google.com/maps/search/?api=1&query=15.497087,73.824911&query_place_id=ChIJfX0-mYXAvzsRrkPXKCeVFZE`,
+            placeid : `ChIJfX0-mYXAvzsRrkPXKCeVFZE`,
+            coordinates : '15.497087,73.824911'
         },
         {
             place: 'Margao',
@@ -16,7 +18,7 @@ const locationData = {
             coordinator: 'Gaurav Dhumatkar',
             Contact: '9923544025',
             details: "In 1998, a significant step was taken with the opening of an observatory in Margao, extending the activities to the entire taluka of Salcete. The observatory was inaugurated in 2003 and currently functions at Ravindra Bhavan, Margao.",
-            latlon : `15.285141,73.962989`, 
+            coordinates : `15.285141,73.962989`, 
             placeid : `ChIJ33R1A9-zvzsRLHk32Ee7wEA`,
             locationLink : `https://www.google.com/maps/search/?api=1&query=15.285141,73.962989&query_place_id=ChIJ33R1A9-zvzsRLHk32Ee7wEA`
         },
@@ -26,7 +28,9 @@ const locationData = {
             days:"Friday",
             coordinator: 'Rudra Sawant',
             Contact: '9881180530',
-            details: "The centre was started in 2010 and functions at Saraswat Vidhyalaya Higher Secondary School, Mapusa."
+            details: "The centre was started in 2010 and functions at Saraswat Vidhyalaya Higher Secondary School, Mapusa.",
+            placeid : `ChIJezBUHNvrvzsR7NdIWPpspbU`,
+            coordinates : '15.595436, 73.805283'
         },
         {
             place: 'Vasco',
@@ -34,7 +38,9 @@ const locationData = {
             days:"Friday",
             coordinator: 'Mohammad Kaif',
             Contact: '8830251246',
-            details: "The Vasco centre was set up in 2013 at Ravindra Bhavan, Baina, Vasco. Sky observation and other astronomy activities are held every Sunday"
+            details: "The Vasco centre was set up in 2013 at Ravindra Bhavan, Baina, Vasco. Sky observation and other astronomy activities are held every Sunday",
+            placeid : `ChIJ0y3C7sTHvzsRhrREheWQigU`,
+            coordinates : '15.391381, 73.808409'
         },
         {
             place: 'Porvorim',
@@ -42,7 +48,9 @@ const locationData = {
             days:"Tuesday",
             coordinator: 'Shekar Bidye',
             Contact: '9823758456',
-            details: "The Porvorim centre is run in collaboration with L. D. Samant Memorial High School and was inaugurated in 2014. Regular activities are conducted every Tuesday."
+            details: "The Porvorim centre is run in collaboration with L. D. Samant Memorial High School and was inaugurated in 2014. Regular activities are conducted every Tuesday.",
+            placeid : `ChIJ_YYg7M7BvzsRs1uuTQ5Yzgo`,
+            coordinates : '15.526964, 73.831383'
         },
         {
             place: 'Morjim',
