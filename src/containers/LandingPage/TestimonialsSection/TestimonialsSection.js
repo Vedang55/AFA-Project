@@ -7,6 +7,11 @@ import Swiper from 'react-id-swiper';
 const params = {
     slidesPerView: 1,
     spaceBetween: 30,
+    loop: true,
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: true
+      },
     pagination: {
         el: '.swiper-pagination',
         clickable: true,
