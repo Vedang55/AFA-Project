@@ -74,7 +74,8 @@ const Toolbar = (props) => {
                 <div></div>
                 <div></div>
             </div>
-            <Banner />
+            {props.stickyNavbar === "true"? <Banner /> : undefined}
+            
 
         </header >
 
