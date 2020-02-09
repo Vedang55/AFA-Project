@@ -32,7 +32,6 @@
 
 @media (max-width:500px){
     .Container {
-        padding: calc((1/1em));
         padding-left: 1vw;
         padding-right: 1vw;
     }
