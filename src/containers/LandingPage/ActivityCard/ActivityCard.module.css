@@ -14,55 +14,48 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    height: 50vh;
-    min-height: 300px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    height: 25rem;
+    /* min-height: 300px; */
 }
 
 .imageCont {
     height: 20%;
-    -webkit-box-flex: 0;
-        -ms-flex-positive: 0;
-            flex-grow: 0;
-    -ms-flex-negative: 0;
-        flex-shrink: 0;
+}
+
+.Container>p {
+    text-align: center;
+}
+
+.Container>h1 {
+    padding: 10px;
+    text-align: center;
+    margin: 0;
+    font-size: 1.5rem;
 }
 
 .Container > p {
-    text-align: center;
-    -ms-flex-preferred-size: 40%;
-        flex-basis: 40%;
-    -webkit-box-flex: 0;
-        -ms-flex-positive: 0;
-            flex-grow: 0;
-    -ms-flex-negative: 0;
-        flex-shrink: 0;
+    font-size: 1rem;
 }
 
-.Container > h1 {
-    -webkit-box-flex: 0;
-        -ms-flex-positive: 0;
-            flex-grow: 0;
-    -ms-flex-negative: 0;
-        flex-shrink: 0;
-    padding: 10px;
-    margin:  0;
-    font-size: 125%;
-}
-
-.imageCont img{
+.imageCont img {
     height: 100%;
 }
 
-.Container > hr {
+.Container>hr {
     border: 2px solid #EC741D;
     width: 60px;
 }
 
-@media (max-width: 500px){
-    .Container{
-        height: 65vh;
+@media (max-width: 500px) {
+    .Container {
+        height: auto;
+        padding-bottom: 5vh;
+        background-color: transparent;
+    }
+    .imageCont {
+        height: 15vh;
     }
 }

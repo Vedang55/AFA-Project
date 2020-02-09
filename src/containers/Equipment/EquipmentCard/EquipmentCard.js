@@ -1,5 +1,5 @@
 import React from 'react';
-import classes from './EquipmentCard.module.css';
+import classes from '../../Clubs/ClubsCard/ClubsCard.module.css';
 
 
 const EquipmentCard = (props) => {

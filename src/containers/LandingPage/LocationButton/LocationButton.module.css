@@ -1,21 +1,20 @@
 /* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
 
 .Container {
+    width: 6rem;
+    height: 6rem;
     border: 3px solid rgba(255, 255, 255, 0.3);
     border-radius: 20px;
     padding: 10px;
     margin: 10px 10px;
-    width: 100px;
     cursor: pointer;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    height: 100px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -35,52 +34,49 @@
 
 
 /* button border animation */
+
 @-webkit-keyframes myanim {
     100% {
         border: 3px solid rgba(255, 255, 255, 1);
     }
-
     0% {
         border: 3px solid rgba(255, 255, 255, 0.4);
     }
- }
+}
+
 @keyframes myanim {
     100% {
         border: 3px solid rgba(255, 255, 255, 1);
     }
-
     0% {
         border: 3px solid rgba(255, 255, 255, 0.4);
     }
- }
+}
 
 
 /* orange hr animation */
- @-webkit-keyframes hranim {
+
+@-webkit-keyframes hranim {
     100% {
         border: 2px solid #EC741D;
     }
-
-
     0% {
         border: 2px solid rgb(0, 0, 0);
     }
- }
- @keyframes hranim {
+}
+
+@keyframes hranim {
     100% {
         border: 2px solid #EC741D;
     }
-
-
     0% {
         border: 2px solid rgb(0, 0, 0);
     }
- }
+}
 
 .Container hr {
     width: 40%;
     border: 0px solid rgb(0, 0, 0);
-    
 }
 
 hr.Selected {

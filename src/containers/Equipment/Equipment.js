@@ -1,5 +1,5 @@
 import React from 'react';
-import classes from './Equipment.module.css';
+import classes from '../Clubs/Clubs.module.css';
 import Layout from '../../components/Layouts/Layout';
 import EquipmentCard from './EquipmentCard/EquipmentCard'
 import EquipmentData from '../../data/equipment'

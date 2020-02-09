@@ -1,34 +1,33 @@
 /* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
 
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
 
 .seccontainer {
     padding: 40px 6vw;
     background-color: black;
     -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;   
-    -webkit-box-pack: center;   
-        -ms-flex-pack: center;   
-            justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
 }
 
-.seccontainer > h1 {
+.seccontainer>h1 {
     margin-top: 0;
     border-bottom: 1px solid white;
     padding: 10px;
-    padding-top: 0;   
+    padding-top: 0;
 }
-
-
 
 /* section 1 */
 
@@ -38,50 +37,50 @@
 }
 
 .Sec1 h1 {
-    font-size: 4em;
+    font-size: 4rem;
     border: none
 }
 
 .Sec1 h2 {
-    font-size: 2.5em;
+    font-size: 2.5rem;
 }
 
 .Sec1 button {
     background-color: #EC741D;
     border-radius: 15px;
     border: none;
-    width: 170px;
+    width: 12rem;
     height: 50px;
     cursor: pointer;
-    outline:none;
+    outline: none;
     color: white;
     font-weight: 600;
     margin-top: 15px;
-    font-size: 1em;
+    font-size: 1rem;
 }
 
 .Sec1 p {
     font-weight: 600;
 }
 
-
 /* About the organisation section 2 */
-.Sec2{
+
+.Sec2 {
     padding-left: 20vw;
     padding-right: 20vw;
 }
 
-.Sec2 > p{
-    font-size: 1.1em;
+.Sec2>p {
+    font-size: 1.1rem;
+    text-align: center;
 }
 
-
-
 /* Our locations section 3 */
+
 .Sec3 {
     -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
     padding-left: 10vw;
     padding-right: 10vw;
 }
@@ -90,30 +89,25 @@
 
 .Sec4 {
     -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
 }
-
 
 /*Our Activities section 5 */
 
-
 .Sec5 {
     -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
 }
-
-
 
 /* Testimonials section 6 */
 
-.Sec6{
+.Sec6 {
     -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
 }
-
 
 .downIcon {
     width: 6vh;
@@ -121,31 +115,19 @@
     bottom: 0;
 }
 
-@media (max-width: 850px){
+@media (max-width: 850px) {
     .Sec3 {
         padding: 10vh 9vh 1vh 9vh;
-        font-size: 1em;
+        font-size: 1rem;
     }
 }
- 
-
 
 @media (max-width: 500px) {
-
     .seccontainer {
-        
         padding: 10vh 2vw;
         padding-bottom: 0;
-
     }
-    /* section 1 */
-    .Sec1 {
-        padding: 10vh 6vw;
-        -webkit-box-sizing: border-box;
-                box-sizing: border-box;
-    }
-
-    .seccontainer > h1 {
+    .seccontainer>h1 {
         font-size: 5.5vw;
         position: -webkit-sticky;
         position: sticky;
@@ -153,36 +135,36 @@
         z-index: 150;
         padding: 0 2vw;
     }
-
+    /* section 1 */
+    .Sec1 {
+        padding: 10vh 6vw;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    .Sec1 p {
+        font-size: 1rem;
+    }
     .Sec1 h1 {
-        font-size: 10vw;
+        font-size: 2rem;
         position: static;
         z-index: 0;
     }
-
     .Sec1 h2 {
-        font-size: 4vh;
+        font-size: 1.3rem;
     }
-
     /* section 2 */
-    .Sec2{
+    .Sec2 {
         padding-left: 4vw;
         padding-right: 4vw;
     }
-
     .Sec2 p {
-        font-size: 2.5vh;
+        font-size: 1.1rem;
     }
-
-
     .Sec3 {
-        font-size: 1em;
+        font-size: 1rem;
     }
-
-
-    .Sec6{
+    .Sec6 {
         padding-left: 4vw;
         padding-right: 4vw;
     }
-    
 }

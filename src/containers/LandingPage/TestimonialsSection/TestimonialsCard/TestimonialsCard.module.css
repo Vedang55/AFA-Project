@@ -1,5 +1,7 @@
 /* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
 
+
+
 .Container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -12,11 +14,15 @@
         -ms-flex-align: stretch;
             align-items: stretch;
     padding: 40px 10vw;
-    font-size: 1.1em;
+    font-size: 1.1rem;
+}
+
+.text {
+    font-size: inherit;
 }
 
 
-.Container > h4 {
+.Container > h5 {
     text-align: center;
 }
 
@@ -26,6 +32,8 @@
 
 @media (max-width:500px){
     .Container {
-        padding: 30px 6.7vw;
+        padding: calc((1/1em));
+        padding-left: 1vw;
+        padding-right: 1vw;
     }
 }
