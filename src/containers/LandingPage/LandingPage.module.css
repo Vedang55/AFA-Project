@@ -25,7 +25,7 @@
 .backgroundContainer {
     background-size: contain;
     background-repeat:repeat;
-    background-position:center;
+    background-position:top;
     background-color: black;
 }
 
@@ -39,6 +39,7 @@
 /* section 1 */
 
 .Sec1 {
+    line-height: initial;
     padding: 140px 6vw;
     min-height: 100vh;
 }
@@ -79,8 +80,10 @@
 }
 
 .Sec2>p {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
+    line-height: 1.8em;
     text-align: center;
+    font-weight: 550;
 }
 
 /* Our locations section 3 */
@@ -149,6 +152,7 @@
     }
     .Sec2 p {
         font-size: 1.1rem;
+        line-height: 1.5em;
     }
     .Sec3 {
         font-size: 1rem;

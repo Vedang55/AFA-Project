@@ -13,6 +13,14 @@
     
 }
 
+.publicationsText {
+    margin-bottom: 0;
+    line-height: 1.6em;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #666666;
+}
+
 .Container > h2 {
     padding : 0;
     margin: 0;

@@ -1,7 +1,7 @@
 /* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
 
 .Container {
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(0, 0, 0, 0.5);
     padding: 20px;
     border-radius: 20px;
     display: -webkit-box;
@@ -17,7 +17,8 @@
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
-    height: 25rem;
+    height: 24rem;
+    line-height: 1.2rem;
     /* min-height: 300px; */
 }
 

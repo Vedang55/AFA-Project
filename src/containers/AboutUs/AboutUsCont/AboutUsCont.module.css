@@ -30,8 +30,21 @@
             align-items: center;
 }
 
-.aboutUsText{
-    font-size: 1.3em;
+.tabSectionContainer h2 {
+    margin-top: 50px;
+}
+
+.tabSectionContainer > img {
+    object-fit: "contain"; 
+    width: 100%
+}
+
+.aboutUsText, .tabSectionContainer > ul{
+    font-size: 1.2em;
+    line-height: 1.5em;
+    margin-top: 40px;
+    color: #666666;
+    
 }
 
 .tabCont {
@@ -89,5 +102,9 @@
 
     .active {
         border-bottom: 2px solid #EC741D;
+    }
+
+    .aboutUsText {
+        line-height: 1.5rem;
     }
 }
