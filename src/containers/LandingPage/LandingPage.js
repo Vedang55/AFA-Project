@@ -24,35 +24,43 @@ const LandingPage = () => {
 
                 </div>
 
-                <div className={[classes.Sec2, classes.seccontainer].join(' ')}>
-                    <h1>About the organisation</h1>
-                    <p>
-                    In the year 1982 due to the zeal and perseverance of a Panaji resident and retired government officer Mr Percival Noronha, the Association of Friends of Astronomy (AFA) was founded by a group of astronomy enthusiasts in Panaji, Goa. Amateur astronomy enthusiasts and tourists are encouraged to stop by and are eagerly helped by the seasoned locals. Dedicated to the appreciation and popularization of Amateur Astronomy, the association was successful in founding the Public Astronomical Observatory at Panaji which is voluntarily managed by the association and supported by the Department of Science, Technology & Environment (Government of Goa), and is the first public observatory in India.
-                    </p>
+
+
+                <div className={classes.backgroundContainer} style={{ backgroundImage: `url(${require('../../assets/images/landingpage/347.png')})` }}>
+
+                    <div className={[classes.Sec2, classes.seccontainer].join(' ')}>
+                        <h1>About the organisation</h1>
+                        <p>
+                            In the year 1982 due to the zeal and perseverance of a Panaji resident and retired government officer Mr Percival Noronha, the Association of Friends of Astronomy (AFA) was founded by a group of astronomy enthusiasts in Panaji, Goa. Amateur astronomy enthusiasts and tourists are encouraged to stop by and are eagerly helped by the seasoned locals. Dedicated to the appreciation and popularization of Amateur Astronomy, the association was successful in founding the Public Astronomical Observatory at Panaji which is voluntarily managed by the association and supported by the Department of Science, Technology & Environment (Government of Goa), and is the first public observatory in India.
+                        </p>
+                    </div>
+
+
+                    <div className={[classes.Sec3, classes.seccontainer].join(' ')}>
+                        <h1>Our locations</h1>
+                        <LocationSelection />
+                    </div>
+
+
+                    <div className={[classes.Sec4, classes.seccontainer].join(' ')}>
+                        <h1>Upcoming events</h1>
+                        <EventSection />
+                    </div>
+
+
+                    <div className={[classes.Sec5, classes.seccontainer].join(' ')}>
+                        <h1>Our Activities</h1>
+                        <ActivitiesSection />
+                    </div>
+
+                    <div className={[classes.Sec6, classes.seccontainer].join(' ')}>
+                        <h1>Testimonials</h1>
+                        <TestimonialsSection />
+                    </div>
+
                 </div>
 
 
-                <div className={[classes.Sec3, classes.seccontainer].join(' ')}>
-                    <h1>Our locations</h1>
-                    <LocationSelection />
-                </div>
-
-
-
-                <div className={[classes.Sec4, classes.seccontainer].join(' ')}>
-                    <h1>Upcoming events</h1>
-                    <EventSection />
-                </div>
-
-                <div className={[classes.Sec5, classes.seccontainer].join(' ')}>
-                    <h1>Our Activities</h1>
-                    <ActivitiesSection />
-                </div>
-
-                <div className={[classes.Sec6, classes.seccontainer].join(' ')}>
-                    <h1>Testimonials</h1>
-                    <TestimonialsSection />
-                </div>
 
 
 

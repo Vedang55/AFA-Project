@@ -41,7 +41,7 @@ const Layout = (props) => {
             </main>
 
             <footer className={classes.footerCont}>
-                {/* <Footer /> */}
+                <Footer />
             </footer>
 
         </div>

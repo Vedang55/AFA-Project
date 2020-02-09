@@ -3,7 +3,7 @@
 /* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
 
 .seccontainer {
-    padding: 40px 6vw;
+    padding: 40px 40px;
     background-color: black;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -20,6 +20,13 @@
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
+}
+
+.backgroundContainer {
+    background-size: contain;
+    background-repeat:repeat;
+    background-position:center;
+    background-color: black;
 }
 
 .seccontainer>h1 {
@@ -66,8 +73,9 @@
 /* About the organisation section 2 */
 
 .Sec2 {
-    padding-left: 20vw;
-    padding-right: 20vw;
+    margin: 0 auto;
+    max-width: 1200px;
+    background-color: transparent;
 }
 
 .Sec2>p {
@@ -76,43 +84,25 @@
 }
 
 /* Our locations section 3 */
-
-.Sec3 {
-    -webkit-box-pack: start;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
-    padding-left: 10vw;
-    padding-right: 10vw;
-}
-
 /*Upcomming events section 4 */
-
-.Sec4 {
-    -webkit-box-pack: start;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
-}
-
 /*Our Activities section 5 */
-
-.Sec5 {
-    -webkit-box-pack: start;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
-}
-
 /* Testimonials section 6 */
-
-.Sec6 {
+.Sec3, .Sec4, .Sec5, .Sec6 {
     -webkit-box-pack: start;
     -ms-flex-pack: start;
     justify-content: flex-start;
+    background-color: transparent;
 }
+
+.Sec6{
+    padding-bottom: 150px;
+}
+
 
 .downIcon {
     width: 6vh;
     position: absolute;
-    bottom: 0;
+    bottom: 10px;
 }
 
 @media (max-width: 850px) {
@@ -166,5 +156,10 @@
     .Sec6 {
         padding-left: 4vw;
         padding-right: 4vw;
+    }
+
+
+    .backgroundContainer {
+        background-image: none !important;
     }
 }

@@ -14,7 +14,7 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    background-color: rgba(255, 255, 255, 0.15);
+    background-color: rgba(60, 60, 60, 0.5);
     padding: 20px;
     border-radius: 15px;
     -webkit-box-sizing: border-box;
@@ -35,6 +35,7 @@
 
 .directionButton{
     color: #EC741D;
+    font-weight: 700;
 }
 
 @media (max-width : 500px){

@@ -3,35 +3,37 @@ import classes from './Footer.module.css'
 
 const Footer = (props) => {
     return (
-        <div className={classes.Container}>
-            <p>
-                Scale the heights of the earth, reach for the effulgent skies, delight in the divine radiance of the cosmos - Atharva Veda
+        <div style={{ backgroundColor: 'black', padding: '30px', borderTop:'4px solid #EC741D' }}>
+            <div className={classes.Container}>
+                <h4 className={classes.tagLine}>
+                    Scale the heights of the earth, reach for the effulgent skies, delight in the divine radiance of the cosmos - Atharva Veda
+                </h4>
+
+                <p>
+                    <span>Visit us <br/></span>
+                    Observatory:<br/>
+                    Public Astronomical Observatory, <br/>
+                    Terrace, Junta House,<br/>
+                    Panaji - Goa
+
+                </p>
+
+                <p>
+                    <span>Working Hours</span><br/>
+                    <span>Office</span><br/>
+                    Mon - Fri: 09:30 AM to 05:30 PM<br/>
+                    Sat: 09:30 AM to 01:30 PM<br/>
+                    Phone: <a href='tel:9923257267'>9923257267</a>
+
+                </p>
+
+                <p>
+                    <span>Mail Us</span><br/>
+                    <a href='mailto:afagoa@gmail.com'>afagoa@gmail.com</a>
+                    
+
             </p>
-
-            <p>
-                Visit us
-    Observatory:
-    Public Astronomical Observatory,
-    Terrace, Junta House,
-    Panaji - Goa
-    403001
-
-            </p>
-
-            <p>
-                Working Hours
-    Office
-    Mon - Fri: 09:30 AM to 05:30 PM
-    Sat: 09:30 AM to 01:30 PM
-    Phone: 9923257267
-
-            </p>
-
-            <p>
-                Mail Us
-                afagoa@gmail.com
-
-            </p>
+            </div>
         </div>
     )
 }

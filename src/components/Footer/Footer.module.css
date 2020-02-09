@@ -1,11 +1,30 @@
 .Container {
+    padding: 2vw;
     box-sizing: border-box;
-    color: #EC741D;
-    padding: 5vw;
+    color: white;
     display: flex;
     background-color: black;
     flex-wrap: wrap;
     justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-size: 1.2em;
 
 }
 
+.tagLine {
+    width: 100%;
+    text-align: center;
+}
+
+p > span {
+    font-weight: 600;
+}
+
+.Container > p {
+        margin: 20px;
+}
+.Container a{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
