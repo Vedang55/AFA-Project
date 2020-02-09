@@ -2,6 +2,7 @@
 
 /* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
 
+
 .seccontainer {
     padding: 40px 40px;
     background-color: black;
@@ -22,11 +23,17 @@
     justify-content: center;
 }
 
-.backgroundContainer {
-    background-size: contain;
-    background-repeat:repeat;
-    background-position:top;
+.backgroundContainer1, .backgroundContainer2 {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
     background-color: black;
+    /* background-attachment: fixed; */
+}
+
+.backgroundContainer2 {
+    background-size: contain;
+    background-position: bottom;
 }
 
 .seccontainer>h1 {
@@ -87,9 +94,13 @@
 }
 
 /* Our locations section 3 */
+
 /*Upcomming events section 4 */
+
 /*Our Activities section 5 */
+
 /* Testimonials section 6 */
+
 .Sec3, .Sec4, .Sec5, .Sec6 {
     -webkit-box-pack: start;
     -ms-flex-pack: start;
@@ -97,10 +108,9 @@
     background-color: transparent;
 }
 
-.Sec6{
+.Sec6 {
     padding-bottom: 150px;
 }
-
 
 .downIcon {
     width: 6vh;
@@ -161,8 +171,6 @@
         padding-left: 4vw;
         padding-right: 4vw;
     }
-
-
     .backgroundContainer {
         background-image: none !important;
     }

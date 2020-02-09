@@ -1,4 +1,4 @@
-/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
+
 
 
 .Cont {
@@ -22,8 +22,7 @@
     width: 100%;
    
     padding: 6px 6vw;
-    -webkit-transition: all 0.3s ease-out;
-    -o-transition: all 0.3s ease-out;
+
     transition: all 0.3s ease-out;
     z-index: 100;
 }
@@ -38,8 +37,8 @@
 }
 
 .Big {
-    height: 140px;
-    background-color: rgba(0, 0, 0, 0.9);
+    height: 120px;
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 

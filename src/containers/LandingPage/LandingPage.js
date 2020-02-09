@@ -26,7 +26,8 @@ const LandingPage = () => {
 
 
 
-                <div className={classes.backgroundContainer} style={{ backgroundImage: `url(${require('../../assets/images/landingpage/347.png')})` }}>
+                <div className={classes.backgroundContainer1} style={{ backgroundImage: `url(${require('../../assets/images/landingpage/347.png')})` }}>
+
 
                     <div className={[classes.Sec2, classes.seccontainer].join(' ')}>
                         <h1>About the organisation</h1>
@@ -41,7 +42,10 @@ const LandingPage = () => {
                         <LocationSelection />
                     </div>
 
+                </div>
 
+
+                <div className={classes.backgroundContainer2} style={{ backgroundImage: `url(${require('../../assets/images/landingpage/347.png')})` }}>
                     <div className={[classes.Sec4, classes.seccontainer].join(' ')}>
                         <h1>Upcoming events</h1>
                         <EventSection />

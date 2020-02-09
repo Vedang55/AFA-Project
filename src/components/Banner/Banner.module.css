@@ -1,3 +1,38 @@
 .Container {
-    background-color: orange;
+    background-color: rgba(255, 255, 255, 0.9) ;
+    position: absolute;
+    top: 100%;
+    
+    max-width: 1200px;
+    width: 100vw;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    padding-left: 25px;
+    min-height: 30px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.Container > marquee {
+    color: gray;
+    font-weight: 600;
+}
+
+.close {
+    display: none;
+}
+
+
+.Icon {
+    font-size: 25px;
+    position: absolute;
+    left: 5px;
+    top: 2.5px;
+    cursor: pointer;
+    color: gray;
+    background-color: transparent;
+    
 }

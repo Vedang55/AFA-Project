@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import classes from './Toolbar.module.css';
 import Logo from '../../components/Logo/Logo'
 import NavigationItems from '../../navigation/Toolbar/NavigationItems/NavigationItems';
+import Banner from '../../components/Banner/Banner'
 
 const Toolbar = (props) => {
 
@@ -58,6 +59,7 @@ const Toolbar = (props) => {
 
 
     return (
+
         <header className={containerClasses.join(' ')}>
 
             <a href="/">
@@ -72,8 +74,11 @@ const Toolbar = (props) => {
                 <div></div>
                 <div></div>
             </div>
+            <Banner />
 
         </header >
+
+
     );
 }
 
