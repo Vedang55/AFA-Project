@@ -10,14 +10,19 @@ import { FiChevronDown } from "react-icons/fi";
 
 
 const LandingPage = () => {
+    let handleBookProgram = () => {
+    
+    }
     return (
         <Layout stickyNavbar="true">
             <div className={classes.Container}>
-                <div className={[classes.Sec1, classes.seccontainer].join(' ')}>
+                <div className={[classes.Sec1, classes.seccontainer].join(' ')} style={{ backgroundImage: `url(${require('../../assets/images/landingpage/bg2.jpg')})`}}>
                     <h1 align='center'>Your Journey through the Universe starts here</h1>
                     <h2 align='center'>Association of Friends of Astronomy <br />Goa</h2>
                     <p align='center'>Want to schedule a programme at your organisation?</p>
-                    <button>Book a programme</button>
+                    <a target='_blank' href='https://afagoa.typeform.com/to/Lmtiz9'>
+                        <button>Book a programme</button>
+                    </a>
                     <div className={classes.downIcon}>
                         <FiChevronDown size={'100%'} />
                     </div>
@@ -26,7 +31,7 @@ const LandingPage = () => {
 
 
 
-                <div className={classes.backgroundContainer1} style={{ backgroundImage: `url(${require('../../assets/images/landingpage/347.png')})` }}>
+                <div className={classes.backgroundContainer1} style={{ backgroundImage: `url(${require('../../assets/images/landingpage/bg3.jpg')})` }}>
 
 
                     <div className={[classes.Sec2, classes.seccontainer].join(' ')}>
@@ -45,7 +50,7 @@ const LandingPage = () => {
                 </div>
 
 
-                <div className={classes.backgroundContainer2} style={{ backgroundImage: `url(${require('../../assets/images/landingpage/347.png')})` }}>
+                <div className={classes.backgroundContainer2} style={{ backgroundImage: `url(${require('../../assets/images/landingpage/bg3.jpg')})` }}>
                     <div className={[classes.Sec4, classes.seccontainer].join(' ')}>
                         <h1>Upcoming events</h1>
                         <EventSection />

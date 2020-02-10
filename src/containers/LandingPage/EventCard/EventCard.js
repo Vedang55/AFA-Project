@@ -6,12 +6,12 @@ const EventCard = (props) => {
         <div className={classes.Container}>
             <div className={classes.header}>
                 <h2>{props.item.name}, <span>{props.item.date}</span></h2>
-                {props.item.link ? <a target="_blank" href={props.item.link} style={{textDecoration:"none"}}><h3>Add event to calendar</h3></a> : undefined}
+                {props.item.link ? <a target="_blank" href={props.item.link} style={{textDecoration:"none"}}><h3>Add to calendar</h3></a> : undefined}
                 
             </div>
 
             <p>
-                {props.item.location} <br />
+                <span style={{color:'#ffab6e'}}>{props.item.location}</span> <br />
                 {props.item.description}
             </p>
         </div>

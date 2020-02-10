@@ -17,8 +17,8 @@ const LocationCard = (props) => {
             <span style={{ fontFamily: 'Arial'}}>Contact: <a style={{color:'white'}} href={`tel:${props.data.Contact}`}>{props.data.Contact}</a></span>
 
             
-            {props.data.coordinates !== undefined ? (  
-            <a style={{textDecoration: 'none'}} href={`https://www.google.com/maps/search/?api=1&query=${props.data.coordinates}&query_place_id=${props.data.placeid}`} target="_blank"><span className={classes.directionButton}><FontAwesomeIcon icon={faMapMarker} /> Get directions to observatory</span></a>) : undefined}
+            {props.data.locationLink !== undefined ? (  
+            <a style={{textDecoration: 'none'}} href={props.data.locationLink} target="_blank"><span className={classes.directionButton}><FontAwesomeIcon icon={faMapMarker} /> Get directions to observatory</span></a>) : undefined}
             
         </div>
     );

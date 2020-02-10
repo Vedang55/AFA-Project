@@ -17,6 +17,10 @@
     text-align: center;
 }
 
+.i {
+    font-style: italic;
+}
+
 p > span {
     font-weight: 600;
 }
