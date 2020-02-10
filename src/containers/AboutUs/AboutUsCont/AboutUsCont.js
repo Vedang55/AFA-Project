@@ -25,26 +25,29 @@ const AFA = () => {
         <div className={classes.tabSectionContainer}>
 
 
-            <h2>ASSOCIATION OF FRIENDS OF ASTRONOMY (GOA) )</h2>
+            <h2>ASSOCIATION OF FRIENDS OF ASTRONOMY (GOA)</h2>
+            <p style={{marginTop: 0}}>(Registered NGO: Reg.No. 51/Goa/82)</p>
             <img alt='Team' src={require('../../../assets/images/aboutus/AFA.jpeg')}></img>
 
 
 
             <p className={classes.aboutUsText}>
-            (Registered NGO: Reg.No. 51/Goa/82 <br /> 
                 The Association of Friends of Astronomy (Goa) was set up in December 1982 by a group of enthusiastic Astronomy buffs. The Association opens its arms to all individuals who are mesmerized by the awesome universe and are curious to know more about it. Activities like workshops, sky observations, lectures, film screenings, exhibitions etc are regularly organized all over Goa for the popularization of science and astronomy among students and the general public. Association of Friends of Astronomy (Goa) has 8 Centers in Goa: The main unit at Panjim and subunits at Margao, Mapusa, Vasco, Porvorim, Canacona, Sakhali and Rural astronomy centres at Morjim & Borim. Any individual regardless of age and education is welcome to join the Association and enrich his life with the beautiful and timeless hobby of appreciating The Mother of Science, ASTRONOMY.
             </p>
+
+            <br></br>
 
             <h2>
                 PUBLIC ASTRONOMICAL OBSERVATORY
             </h2>
-            <img alt='Team' src={require('../../../assets/images/aboutus/IMG_8028.JPG')}></img>
+            <p style={{marginTop: 0}}>(Under Department of Science, Technology &amp; Environment, Govt. of Goa)</p>
+            <img alt='Team' src={require('../../../assets/images/aboutus/pano.png')}></img>
 
 
             <p className={classes.aboutUsText}>
-                (Under Department of Science, Technology &amp; Environment, Govt. of Goa)
                 The P.A.O. Panjim was set up by the Association of Friends of Astronomy (Goa) in 1990 and is supported and funded by the Department of Science, Technology &amp; Environment (Govt. of Goa). It is the first public observatory to be set up in India and is voluntarily managed by the members of the Association of Friends of Astronomy (Goa). Another Public Astronomical Observatory was instituted in Margao in 2003 and 3rd one came up in 2010 at Mapusa. The Vasco observatory (Founded: 2013) &amp; Canacona observatory (Founded: 2013) were set up with the assistance of educational institutions. Similarly, the Rural Astronomy centres of Morjim, Borim &amp; Sanquelim villages are also set up with the help of schools and have the distinction of being the only Rural Astronomy centres in the Country. At all these centres general public can view the Cosmos free of cost.
             </p>
+            <img alt='Team' src={require('../../../assets/images/aboutus/bridge.png')}></img>
         </div>
     );
 }

@@ -1,7 +1,7 @@
 /* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
 
 .Container {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(160, 160, 160, 0.2);
     padding: 20px;
     border-radius: 20px;
     display: -webkit-box;

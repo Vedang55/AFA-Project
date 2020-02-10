@@ -5,6 +5,7 @@
 .seccontainer {
     padding: 40px 40px;
     background-color: black;
+    background-size: cover;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     display: -webkit-box;
@@ -31,7 +32,7 @@
 }
 
 .backgroundContainer2 {
-    background-size: contain;
+    background-size: cover;
     background-position: bottom;
 }
 
@@ -170,7 +171,7 @@
         padding-left: 4vw;
         padding-right: 4vw;
     }
-    .backgroundContainer1, .backgroundContainer2 {
+    /* .backgroundContainer1, .backgroundContainer2 {
         background-image: none !important;
-    }
+    } */
 }

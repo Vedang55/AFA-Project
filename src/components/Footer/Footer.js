@@ -6,7 +6,7 @@ const Footer = (props) => {
         <div style={{ backgroundColor: 'black', padding: '30px', borderTop:'4px solid #EC741D' }}>
             <div className={classes.Container}>
                 <h4 className={classes.tagLine}>
-                    Scale the heights of the earth, reach for the effulgent skies, delight in the divine radiance of the cosmos - Atharva Veda
+                    <span className="i">"Scale the heights of the earth, reach for the effulgent skies, delight in the divine radiance of the cosmos."</span> - Atharva Veda
                 </h4>
 
                 <p>

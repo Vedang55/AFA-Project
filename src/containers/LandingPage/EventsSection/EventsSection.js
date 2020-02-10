@@ -7,7 +7,7 @@ import ReactLoading from 'react-loading';
 
 const EventSection = () => {
     useEffect(() => {
-        fetch('https://spreadsheets.google.com/feeds/cells/1BjWScaREAAHatoXOUX-07843THquWzqny4WX3uPAkzk/1/public/full?alt=json')
+        fetch('https://spreadsheets.google.com/feeds/cells/1nHjqTJw_4lQRFPedIghCAdHc6UhP-mmtr6yk7_Zd9fo/1/public/full?alt=json')
             .then((response) => response.json())
             .then((responseJson) => {
                 const eventData = [];

@@ -19,10 +19,11 @@ const Banner = (props) => {
         <div className={attachedClasses.join(' ')}>
 
 
-            <FontAwesomeIcon icon={faTimesCircle} className={classes.Icon} onClick={onCrossClick}/>
+
             <marquee scrollamount='10' behavior="scroll" direction="left">
                 Announcements: Here is some scrolling text... left to right! Your Journey through the Universe starts here
 Association of Friends of Astronomy In the year 1982 due to the zeal and perseverance of a Panaji resident an</marquee>
+            <FontAwesomeIcon icon={faTimesCircle} className={classes.Icon} onClick={onCrossClick}/>
 
         </div>
     );
