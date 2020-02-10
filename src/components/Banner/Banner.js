@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import classes from './Banner.module.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTimesCircle } from '@fortawesome/free-solid-svg-icons'
@@ -6,27 +6,56 @@ import { faTimesCircle } from '@fortawesome/free-solid-svg-icons'
 const Banner = (props) => {
 
     const [open, setOpen] = useState(1);
+    const [loaded, setLoaded] = useState(0);
+    const announcements= useRef();
+
+    useEffect(() => {
+        fetch('https://spreadsheets.google.com/feeds/cells/1BjWScaREAAHatoXOUX-07843THquWzqny4WX3uPAkzk/4/public/full?alt=json')
+            .then((response) => response.json())
+            .then((responseJson) => {
+
+                const entry = responseJson.feed.entry;
+                announcements.current = entry.map(element => {
+                    return (element.content['$t']);
+                }).filter(function (element) {
+                    return element !== undefined;
+                });
+                setLoaded(1);
+            })
+            .catch((error) => {
+                
+            });
+    }, []);
 
     const onCrossClick = () => {
         setOpen(0);
     }
 
     const attachedClasses = [classes.Container];
-    if (!open)  
+    if (!open)
         attachedClasses[1] = classes.close;
 
-    return (
-        <div className={attachedClasses.join(' ')}>
+    
+
+    if (loaded) {
+        return (
+            <div className={attachedClasses.join(' ')}>
 
 
+                <FontAwesomeIcon icon={faTimesCircle} className={classes.Icon} onClick={onCrossClick} />
+                <marquee scrollamount='10' behavior="scroll" direction="left">
+                    Anncouncements: &nbsp;
+                    {announcements.current.map((item)=>{
+                        return (<span>{item}&emsp;&emsp;&emsp;&emsp;&emsp;</span>)
+                    })}
+                </marquee>
 
-            <marquee scrollamount='10' behavior="scroll" direction="left">
-                Announcements: Here is some scrolling text... left to right! Your Journey through the Universe starts here
-Association of Friends of Astronomy In the year 1982 due to the zeal and perseverance of a Panaji resident an</marquee>
-            <FontAwesomeIcon icon={faTimesCircle} className={classes.Icon} onClick={onCrossClick}/>
-
-        </div>
-    );
+            </div>
+        );
+    }
+    else {
+        return <div className={classes.close}></div>;
+    }
 }
 
 export default Banner;
