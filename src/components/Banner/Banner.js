@@ -46,7 +46,7 @@ const Banner = (props) => {
                 <marquee scrollamount='10' behavior="scroll" direction="left">
                     Anncouncements: &nbsp;
                     {announcements.current.map((item)=>{
-                        return (<span>{item}&emsp;&emsp;&emsp;&emsp;&emsp;</span>)
+                        return (<span key={Math.random()}>{item}&emsp;&emsp;&emsp;&emsp;&emsp;</span>)
                     })}
                 </marquee>
 
