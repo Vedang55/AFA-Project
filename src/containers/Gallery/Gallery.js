@@ -39,8 +39,8 @@ class MyGallery extends React.Component {
 
     componentDidMount = () => {
         Promise.all([
-            fetch('https://spreadsheets.google.com/feeds/cells/1BjWScaREAAHatoXOUX-07843THquWzqny4WX3uPAkzk/2/public/full?alt=json'),
-            fetch('https://spreadsheets.google.com/feeds/cells/1BjWScaREAAHatoXOUX-07843THquWzqny4WX3uPAkzk/3/public/full?alt=json'),
+            fetch('https://spreadsheets.google.com/feeds/cells/1nHjqTJw_4lQRFPedIghCAdHc6UhP-mmtr6yk7_Zd9fo/3/public/full?alt=json'),
+            fetch('https://spreadsheets.google.com/feeds/cells/1nHjqTJw_4lQRFPedIghCAdHc6UhP-mmtr6yk7_Zd9fo/4/public/full?alt=json'),
         ]).then(([astro, events]) => Promise.all([astro.json(), events.json()]))
             .then(([astroData, eventsData]) => {
 
