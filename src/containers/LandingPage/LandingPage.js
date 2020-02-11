@@ -6,13 +6,9 @@ import EventSection from './EventsSection/EventsSection';
 import ActivitiesSection from './ActivitiesSection/ActivitiesSection';
 import TestimonialsSection from './TestimonialsSection/TestimonialsSection';
 import { FiChevronDown } from "react-icons/fi";
-
-
+import StarfieldAnimation from 'react-starfield-animation'
 
 const LandingPage = () => {
-    let handleBookProgram = () => {
-    
-    }
     return (
         <Layout stickyNavbar="true">
             <div className={classes.Container}>
@@ -26,7 +22,13 @@ const LandingPage = () => {
                     <div className={classes.downIcon}>
                         <FiChevronDown size={'100%'} />
                     </div>
-
+                <StarfieldAnimation
+                    style={{
+                    position: 'absolute',
+                    width: '100%',
+                    height: '100%'
+                    }}
+                />
                 </div>
 
 
