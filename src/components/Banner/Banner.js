@@ -10,7 +10,7 @@ const Banner = (props) => {
     const announcements= useRef();
 
     useEffect(() => {
-        fetch('https://spreadsheets.google.com/feeds/cells/1BjWScaREAAHatoXOUX-07843THquWzqny4WX3uPAkzk/4/public/full?alt=json')
+        fetch('https://spreadsheets.google.com/feeds/cells/1nHjqTJw_4lQRFPedIghCAdHc6UhP-mmtr6yk7_Zd9fo/2/public/full?alt=json')
             .then((response) => response.json())
             .then((responseJson) => {
 

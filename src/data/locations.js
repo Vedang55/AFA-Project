@@ -22,8 +22,8 @@ const locationData = {
             place: 'Mapusa',
             timings: '7 p.m. to 9 p.m.',
             days:"Friday",
-            coordinator: 'Rudra Sawant',
-            Contact: '9881180530',
+            coordinator: 'Rishab Saudagar',
+            Contact: '7798911716',
             details: "The centre was started in 2010 and functions at Saraswat Vidhyalaya Higher Secondary School, Mapusa.",
             locationLink : `https://goo.gl/maps/UH8Ed6ov97PayXMX7`,
         },
@@ -33,7 +33,7 @@ const locationData = {
             days:"Friday",
             coordinator: 'Mohammad Kaif',
             Contact: '8830251246',
-            details: "The Vasco centre was set up in 2013 at Ravindra Bhavan, Baina, Vasco. Sky observation and other astronomy activities are held every Sunday",
+            details: "The Vasco centre was set up in 2013 at Ravindra Bhavan, Baina, Vasco. Sky observation and other astronomy activities are held every Sunday.",
             locationLink : `https://goo.gl/maps/tniZkQWF8S5YkMuc8`,
         },
         {
@@ -42,7 +42,7 @@ const locationData = {
             days:"Tuesday",
             coordinator: 'Shekar Bidye',
             Contact: '9823758456',
-            details: "The Porvorim centre is run in collaboration with L. D. Samant Memorial High School and was inaugurated in 2014. Regular activities are conducted every Tuesday.",
+            details: "The Porvorim centre is run in collaboration with L.D. Samant Memorial High School and was inaugurated in 2014. Regular activities are conducted every Tuesday.",
             locationLink : `https://goo.gl/maps/HwGxYDUnvKivoQov9`,
         },
         {
@@ -71,7 +71,7 @@ const locationData = {
             days:"",
             coordinator: 'Manoj Gaonkar',
             Contact: '9765676007',
-            details: "Rural astronomy centre located at Mallikarjun Vidyalaya, Canacona",
+            details: "Rural astronomy centre located at Mallikarjun Vidyalaya, Canacona.",
             locationLink : 'https://goo.gl/maps/NsqvWzrPETQuTd7W8'
         }
         ,
