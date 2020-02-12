@@ -12,7 +12,7 @@ const LandingPage = () => {
     return (
         <Layout stickyNavbar="true">
             <div className={classes.Container}>
-                <div className={[classes.Sec1, classes.seccontainer].join(' ')} style={{ backgroundImage: `url(${require('../../assets/images/landingpage/bg2.jpg')})`}}>
+                <div className={[classes.Sec1, classes.seccontainer].join(' ')} style={{ backgroundImage: `url(${require('../../assets/images/landingpage/header.jpg')})`}}>
                     <h1 align='center'>Your Journey through the Universe starts here</h1>
                     <h2 align='center'>Association of Friends of Astronomy <br />Goa</h2>
                     <p align='center'>Want to schedule a programme at your organisation?</p>
@@ -33,7 +33,7 @@ const LandingPage = () => {
 
 
 
-                <div className={classes.backgroundContainer1} style={{ backgroundImage: `url(${require('../../assets/images/landingpage/bg3.jpg')})` }}>
+                <div className={classes.backgroundContainer1} style={{ backgroundImage: `url(${require('../../assets/images/landingpage/bg4.jpg')})` }}>
 
 
                     <div className={[classes.Sec2, classes.seccontainer].join(' ')}>
