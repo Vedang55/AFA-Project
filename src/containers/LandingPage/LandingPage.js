@@ -52,7 +52,7 @@ const LandingPage = () => {
                 </div>
 
 
-                <div className={classes.backgroundContainer2} style={{ backgroundImage: `url(${require('../../assets/images/landingpage/bg3.jpg')})` }}>
+                <div className={classes.backgroundContainer2} style={{ backgroundImage: `url(${require('../../assets/images/landingpage/bg4.jpg')})` }}>
                     <div className={[classes.Sec4, classes.seccontainer].join(' ')}>
                         <h1>Upcoming events</h1>
                         <EventSection />

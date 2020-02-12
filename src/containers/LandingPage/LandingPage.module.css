@@ -72,6 +72,8 @@
     font-weight: 600;
     margin-top: 15px;
     font-size: 1rem;
+    position: relative;
+    z-index: 101;
 }
 
 .Sec1 p {
