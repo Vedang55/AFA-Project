@@ -38,18 +38,11 @@ const Banner = (props) => {
     
 
     if (loaded) {
+        console.log(announcements.current)
         return (
             <div className={attachedClasses.join(' ')}>
-
-
+                <div className="marquee">{announcements.current[0]}</div>
                 <FontAwesomeIcon icon={faTimesCircle} className={classes.Icon} onClick={onCrossClick} />
-                <marquee scrollamount='10' behavior="scroll" direction="left">
-                    Anncouncements: &nbsp;
-                    {announcements.current.map((item)=>{
-                        return (<span key={Math.random()}>{item}&emsp;&emsp;&emsp;&emsp;&emsp;</span>)
-                    })}
-                </marquee>
-
             </div>
         );
     }
