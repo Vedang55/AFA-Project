@@ -6,55 +6,54 @@ import ReactLoading from 'react-loading';
 
 
 const EventSection = () => {
+    let eventsEach = [];
+    const [events, setEvents] = useState(eventsEach)
+    const [expand, setExpand] = useState(0);
+    const [loaded, setLoaded] = useState(0);
+    const [showMore, setShowMore] = useState(3);
+
+
     useEffect(() => {
-        fetch('https://spreadsheets.google.com/feeds/cells/1nHjqTJw_4lQRFPedIghCAdHc6UhP-mmtr6yk7_Zd9fo/1/public/full?alt=json')
+        fetch(`https://sheets.googleapis.com/v4/spreadsheets/1nHjqTJw_4lQRFPedIghCAdHc6UhP-mmtr6yk7_Zd9fo/values/Events?alt=json&key=${process.env.REACT_APP_GOOGLE_KEY}`)
             .then((response) => response.json())
             .then((responseJson) => {
-                const eventData = [];
-                const entry = responseJson.feed.entry;
-                entry.forEach(element => {
-                    if (eventData[element['gs$cell'].row] === undefined && element['gs$cell'].row !== '1') {
-                        eventData[element['gs$cell'].row] = {};
-                    }
-
-                    if (element['gs$cell'].row !== '1')
-                        switch (element['gs$cell'].col) {
-                            case '1':
-                                eventData[element['gs$cell'].row].name = element.content['$t'];
-                                break;
-                            case '2':
-                                eventData[element['gs$cell'].row].date = element.content['$t'];
-                                break
-                            case '3':
-                                eventData[element['gs$cell'].row].location = element.content['$t']
-                                break
-                            case '4':
-                                eventData[element['gs$cell'].row].description = element.content['$t']
-                                break
-                            case '5':
-                                eventData[element['gs$cell'].row].link = element.content['$t']
-                                break
-                        }
-                });
-                setEvents(eventData.filter(function (element) {
-                    return element !== undefined;
-                }));
+                for (const property in responseJson.values) {
+                    
+                        
+                        eventsEach.push({
+                            name:responseJson.values[property][0],
+                            date:responseJson.values[property][1],
+                            location:responseJson.values[property][2],
+                            description:responseJson.values[property][3],
+                            link: responseJson.values[property][4] 
+                        })
+                        console.log(property)
+                        
+                    
+                }
+                
+                
+                  
                 setLoaded(1);
             })
             .catch((error) => {
+                console.log(error)
                 setLoaded(-1);
             });
     }, []);
 
 
 
-    const [events, setEvents] = useState([]);
-    const [expand, setExpand] = useState(0);
-    const [loaded, setLoaded] = useState(0);
+;
+
+
 
     useEffect(() => {
         if (expand) {
-            document.getElementById('scrollto').scrollIntoView({ block: "end", inline: "nearest", behavior: "smooth" });
+            setShowMore(events.length)
+        }
+        else{
+            setShowMore(3)
         }
     }, [expand]);
 
@@ -69,28 +68,22 @@ const EventSection = () => {
 
     if (loaded === 1) {
         const eventCards = [];
-        for (let i = 0; i < events.length && i < 2; i++) {
+        /*for (let i = 0; i < events.length && i < 2; i++) {
             eventCards[i] = <EventCard key={Math.random()} item={events[i]} />
-        }
+        }*/
 
         return (
             <div className={classes.eventCardContainer} id={'scrollto'}>
                 {eventCards}
-
-                {
-                    events.map((item, index) => {
-                        if (index > 1 && expand) {
-                            return <EventCard key={Math.random()} item={item} />
-                        }
-                        else {
-                            return undefined;
-                        }
-                    })
-                }
-
+                {events.slice(1, showMore).map((event)=>{
+                    return(
+                        <EventCard item={event}/>
+                    )
+                })}
+                
                 {events.length > 2 ? <p onClick={toggleExpand} className={classes.showMore}>
-                    {!expand ? `Show ${events.length - 2} more` : 'Show Less'}
-                </p> : undefined}
+                    {!expand ? `Show ${events.length - 3} more` : 'Show Less'}
+        </p> : undefined}
 
             </div>
         );
