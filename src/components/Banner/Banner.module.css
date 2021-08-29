@@ -8,6 +8,8 @@
     max-width: 1200px;
     width: 90vw;
     margin: 0 auto;
+    left: 0;
+    right: 0;
     padding-left: 15px;
     padding-right: 50px;
     min-height: 30px;
@@ -15,14 +17,14 @@
     overflow: hidden;
     white-space: nowrap;
     box-sizing: border-box;
-    animation: marquee 50s linear infinite;
+    animation: marquee 20s linear 1s infinite;
 }
 
 
 /* Make it move */
 @keyframes marquee {
     0%   { text-indent: 27.5em }
-    100% { text-indent: -105em }
+    100% { text-indent: -60em }
 }
 
 
