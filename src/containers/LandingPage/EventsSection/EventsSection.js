@@ -27,7 +27,7 @@ const EventSection = () => {
                             description:responseJson.values[property][3],
                             link: responseJson.values[property][4] 
                         })
-                        console.log(property)
+                 
                         
                     
                 }
