@@ -40,7 +40,7 @@ const Banner = (props) => {
 
     
 
-    if (loaded) {
+    if (loaded && announcements.length > 0) {
         
         return (
             
